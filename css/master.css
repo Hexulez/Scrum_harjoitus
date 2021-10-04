@@ -1,0 +1,108 @@
+html body {
+  width: 100%;
+  height:100%;
+
+}
+.begin {
+  width: 100%;
+  background-color: #5E5D60;
+  height: 100px;
+  margin-top:0px;
+
+
+
+}
+//*
+.navbar {
+  position: fixed;
+}
+*/
+.navbar ul {
+      list-style: none;
+      background-color: #444;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+
+  .navbar li {
+      list-style: none;
+      font-size: 1.2em;
+      line-height: 40px;
+      height: 40px;
+
+      float:left;
+      margin-left: 15px;
+
+}
+.nav-link {
+  color: white;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.begin h1 {
+  position: absolute;
+  top: 30px;
+  left:48%;
+  text-align: center;
+  margin-right: : 50%;
+
+
+}
+
+#logo {
+  width: 10%;
+  display: block;
+  margin-right: 25px;
+  position: absolute;
+  right: 20px;
+  top:0px;
+}
+.box {
+  width: 100%;
+  height: 200px;
+  margin-top: 35px;
+}
+.teksti_v {
+  background-color: #5E5D60;
+  padding: 15px;
+  border-radius: 50px;
+  width: 75%;
+
+}
+
+.kuva_o {
+
+
+  position: relative;
+  left:80%;
+  top: -80%;
+  width:150px;
+  height: 200px
+
+}
+.teksti_o {
+  width: 75%;
+  background-color: #5E5D60;
+  position: relative;
+  left:20%;
+  top: -80%;
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 50px;
+}
+.teksti {
+
+}
+.image {
+  height: 150px;
+  background-color: #5E5D60;
+}
+
+.otsikko {
+  text-align: center;
+  font-size: 1.8em;
+}
