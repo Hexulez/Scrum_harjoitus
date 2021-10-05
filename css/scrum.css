@@ -117,6 +117,26 @@ article {
 }
 footer {
   background: #CDCDCD;
+  width: 100%;
+  margin: auto;
+}
+table {
+  text-align: left;
+}
+tr {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+td {
+
+}
+.scrum_ideologia {
+  border-radius: 50px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%
+
 }
 .kuvat {
   margin: auto;
