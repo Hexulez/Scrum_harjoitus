@@ -123,12 +123,10 @@ footer {
 table {
   text-align: left;
 }
-tr {
-  padding-right: 10%;
-  padding-left: 10%;
-}
-td {
 
+td {
+padding-left: 220px;
+padding-right: 220px;
 }
 .scrum_ideologia {
   border-radius: 50px;
@@ -140,7 +138,6 @@ td {
 }
 .kuvat {
   margin: auto;
-  background:
   height: 20%;
   width: 20%;
 
