@@ -1,3 +1,4 @@
+/*Hex*/
 html body {
   width: 100%;
   height:100%;
@@ -89,7 +90,7 @@ html body {
   background-color: #5E5D60;
   position: relative;
   left:20%;
-  top: -80%;
+  top: -85%;
   margin-left: 20px;
   padding: 15px;
   border-radius: 50px;
@@ -105,4 +106,34 @@ html body {
 .otsikko {
   text-align: center;
   font-size: 1.8em;
+}
+
+
+
+/*Roos */
+article {
+
+  background: #CDCDCD;
+}
+footer {
+  background: #CDCDCD;
+}
+.kuvat {
+  margin: auto;
+  background:
+  height: 20%;
+  width: 20%;
+
+}
+#kuva1 {
+  float: left;
+  padding-left: 10%
+}
+#kuva2 {
+  float: none;
+  padding: 0% 10% 0% 10%
+}
+#kuva3 {
+  float: right;
+  padding-right: 10%
 }
