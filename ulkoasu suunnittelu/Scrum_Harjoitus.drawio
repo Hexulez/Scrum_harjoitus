@@ -1,1 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2021-10-01T08:47:02.647Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="QyxN9bWce8VPjeShhctY" version="15.3.8" type="device"><diagram id="vcU9gPKcXCUbcr1fDcbV" name="Page-1">7Zhdb5swFIZ/DdJ2MSnYQJLLlDZZp05Tl2VTd+cGF04xODMmH/v1s4NJQsy6Vi39kCYusF/bgJ/z+tjCwWG2ngiySD7ziDIH9aK1g08dhFzsDdRNK5tKGfRQJcQCItNpL0zhNzViz6glRLRodJScMwmLpjjneU7nsqERIfiq2e2Gs+ZbFySmljCdE2arPyCSiZkF6u/1jxTipH6zGwyrlozUnc1MioREfHUg4TMHh4JzWZWydUiZhldzqcaN/9K6+zBBc3mfAWcUfsI1nvHZ6Hw+uzy9uoxvP5hgLAkrzYSnsCxzJXFZQJpyB49V5d10LsrsvZmI3NR0BC/ziOoX9Bx8skpA0umCzHXrSvlBaYnMmKq5qngDjIWccbEdi8O+vpRuT8TMbUmFpOsDyUxsQnlGpdioLqbVqwasDiNksCeH0QmMSIwr4t2T9uBUwbB7AEdscZQ0LSQ4IXZGniYoq2JS3TThJQdNE4pKYqbHboiDgl+ldscJgzwFua/rYerDIYH8rpi4ryEmZt27/Z4VIz9oiRHyuoqRZ8VorBYfFTo6Oah3OCjUxi84SEnrqgZtiiYMePwKF0KNuefanNvXgj/siLNvcf6SkbRcksdZ9Qks6dcmvMOUyH9WUwb/E8dxlFDQjJKHXjx19F+tpb1/onpmQw/sEwVlIDeFErenCMi3j6DKPDGQQhJzxLjggmaqcL4o7j5qvKw73aY5g5YUMnDb8m3/CYjjWToKy9ur6XDC+udfr4NvnyYt+fY7YZCqBf+UDMcjfe0YWsBasD7guIbdwEaGuyJmJ90LHnMbV8Kz67J4UVTB0ZbVssDd1u0ddQXPzoWPT4QdAjxarwO/JUO2bSau3xXA4dsCiIb3INi2x3RHsI7pW0HoB89oQlXd/1TYth38msFnfwA=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-01T08:46:05.565Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="1DLuchYJi9Ytk9MnYNUY" version="15.3.8" type="github">
+  <diagram id="vcU9gPKcXCUbcr1fDcbV" name="Page-1">
+    <mxGraphModel dx="1348" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-2" value="Sivun otsikko? (Scrum)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C7C7C7;" parent="1" vertex="1">
+          <mxGeometry x="4" width="820" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-3" value="tekstiä (tähän voi sisältää &quot;linkit&quot; someihin)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7C7C7;" parent="1" vertex="1">
+          <mxGeometry x="4" y="170" width="560" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-4" value="Footer (nimet, osoitteet, somet, linkit?)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C7C7C7;" parent="1" vertex="1">
+          <mxGeometry y="1010" width="820" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-5" value="Omakuva" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="170" width="250" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-6" value="tekstiä (tähän voi sisältää &quot;linkit&quot; someihin)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7C7C7;" parent="1" vertex="1">
+          <mxGeometry x="260" y="420" width="560" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-7" value="Omakuva" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4" y="420" width="250" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="EeiZib3UoUAIcUQDYQgj-8" value="Selitys Scrumin ideologiasta? (Lorem Ipsum)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7C7C7;" parent="1" vertex="1">
+          <mxGeometry x="10" y="670" width="810" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="3UkACujYS9Gl7IRb6TJG-5" value="Valikot" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;" vertex="1" parent="1">
+          <mxGeometry x="4" width="316" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3UkACujYS9Gl7IRb6TJG-6" value="Logo" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FAFAFA;" vertex="1" parent="1">
+          <mxGeometry x="670" y="20" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3UkACujYS9Gl7IRb6TJG-7" value="kuva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;" vertex="1" parent="1">
+          <mxGeometry x="10" y="850" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="3UkACujYS9Gl7IRb6TJG-9" value="kuva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;" vertex="1" parent="1">
+          <mxGeometry x="290" y="850" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="3UkACujYS9Gl7IRb6TJG-10" value="kuva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;" vertex="1" parent="1">
+          <mxGeometry x="560" y="850" width="260" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
