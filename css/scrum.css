@@ -122,12 +122,10 @@ footer {
 }
 table {
   text-align: left;
+  border: 1px solid black;
+  width: 100%
 }
 
-td {
-padding-left: 220px;
-padding-right: 220px;
-}
 .scrum_ideologia {
   border-radius: 50px;
   width: 95%;
