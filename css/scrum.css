@@ -117,12 +117,11 @@ article {
 }
 footer {
   background: #CDCDCD;
-  width: 100%;
+  width: 99%;
   margin: auto;
 }
 table {
   text-align: left;
-  border: 1px solid black;
   width: 100%
 }
 
