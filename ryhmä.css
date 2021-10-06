@@ -69,10 +69,12 @@ section h2 {
 
 .kuva_v {
   position: relative;
+  top: -5vh;
   left:80%;
   margin-top: -11%;
   width:150px;
   height: 200px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -104,6 +106,7 @@ section h2 {
   margin-top: -2%;
   width:150px;
   height: 200px;
+  margin-bottom: 0px;
 }
 
 
