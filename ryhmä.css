@@ -124,7 +124,7 @@ section h2 {
 }
 
 .ideologia {
-  background-color: rgb(180, 188, 188);
+  border: 1px solid red;
   border-radius: 50px;
   margin-top: 1%;
   width: 95%;
