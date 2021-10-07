@@ -84,21 +84,21 @@ section h2 {
     opacity: 50%;
 
   }
-  .teksti_v {
+  .teksti_vasen {
     position: relative;
     margin: 50px;
   }
-  .kuva_o {
+  .kuva_oikea {
     position:relative;
     margin: 50px;
 
   }
-  .teksti_o {
+  .teksti_oikea {
     position: relative;
     margin: 50px;
 
   }
-  .kuva_v {
+  .kuva_vasen {
     position: relative;
     margin: 50px;
 
@@ -122,22 +122,22 @@ section h2 {
   .ryhmäläinen {
     color: rgb(124, 125, 125);
   }
-  .teksti_v {
+  .teksti_vasen {
   ;
 
   }
-  .kuva_o {
+  .kuva_oikea {
     float: right;
     position: relative;
     top:-200px;
     margin-left: 30px;
   }
-  .teksti_o {
+  .teksti_oikea {
     position: relative;
     right: -20vw;
 
   }
-  .kuva_v {
+  .kuva_vasen {
     position: relative;
     left: 5px;
     top: -200px;
