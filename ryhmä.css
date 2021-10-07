@@ -178,16 +178,21 @@ section h2 {
 
 
 
-footer {
-  background: #CDCDCD;
+.alaosa
+{
   width: 100%;
-  margin: auto;
+  background-color: rgb(180, 188, 188);
+  height: 200px;
+  margin-top:0px;
+  margin-bottom: 0px;
 }
 
-table {
-  background-color: rgb(180, 188, 188);
-  text-align: left;
-  width: 100%
+.alaosa .sisalto
+{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
 }
 
 .kuvat {
