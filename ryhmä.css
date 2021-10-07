@@ -3,7 +3,12 @@ body {
 background-color: rgb(235, 235, 235);
 font-family: 'Roboto', sans-serif;
 }
-
+.ryhmalainen {
+  min-height: 300px;
+}
+.ryhmalainen img {
+  margin-top: 32px;
+}
 header {
   width: 100%;
   background-color: rgb(180, 188, 188);
