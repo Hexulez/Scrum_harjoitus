@@ -66,6 +66,7 @@ section h2 {
   border: 1px solid red;
   border-radius: 50px;
   width: 75%;
+  position: relative;
 }
 
 .kuva_v {
@@ -84,7 +85,6 @@ section h2 {
   }
 }
 
-
 .teksti_o {
   width: 75%;
   border: 1px solid red;
@@ -93,13 +93,6 @@ section h2 {
   margin-top: -3%;
   padding: 15px;
   border-radius: 50px;
-}
-.teksti_t {
-  width: 75%;
-  border: 1px solid red;
-  padding: 15px;
-  border-radius: 50px;
-  margin-top: 0.5%;
 }
 
 .kuva_o {
@@ -140,11 +133,8 @@ section h2 {
   margin-right: auto;
   padding: 1%;
   z-index:1;
+}
 
-}
-.otsikko {
-  text-align: center;
-}
 
 
 
