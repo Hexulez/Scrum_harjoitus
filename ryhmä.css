@@ -74,9 +74,9 @@ section h2 {
   position: relative;
 }
 
-.kuva_v {
+.kuva_o {
   position: relative;
-  top: -5vh;
+  top: -15vh;
   left:80%;
   margin-top: -11%;
   width:150px;
@@ -97,10 +97,11 @@ section h2 {
   left: 23%;
   margin-top: -3%;
   padding: 15px;
+
   border-radius: 50px;
 }
 
-.kuva_o {
+.kuva_v {
   position: absolute;
   margin-top: -2%;
   width:150px;
@@ -109,12 +110,7 @@ section h2 {
 }
 
 
-.kuva_t {
-  position: absolute;
-  left:80%;
-  margin-top: -11%;
-  width:150px;
-  height: 200px;
+
 }
 
 .teksti {
