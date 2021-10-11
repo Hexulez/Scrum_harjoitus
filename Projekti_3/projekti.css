@@ -2,16 +2,24 @@ body, html {
       height: 100%;
       }
 
-* {   /* muuttaa sivut selaimen kokoiseksi */
+
+
+/* muuttaa sivut selaimen kokoiseksi */
+* {
 margin: 0;
 padding: 0;
 }
+
+
 
 section {
       height: 100%;
       }
 
-#kuva1, #kuva2, #kuva3, #kuva4 {  /* Keskittää kuvan keskelle näyttöä */
+
+
+/* Keskittää kuvan keskelle näyttöä */
+.kuva1, .kuva2, .kuva3, .kuva4 {
       height: 100%;
       background-attachment: fixed;
       background-position: center;  /* Kuva keskelle */
@@ -19,23 +27,33 @@ section {
       background-size: cover;
       }
 
-#kuva1 {  /* Määrittää mikä kuva on kuva1 */
+
+/* Määrittää mikä kuva on kuva1 */
+.kuva1 {
   background-image: url('kissa2.jpg');
 }
 
-#kuva2 {  /* Määrittää mikä kuva on kuva2 */
+
+/* Määrittää mikä kuva on kuva2 */
+.kuva2 {
   background-image: url('kissa3.jpg');
 }
 
-#kuva3 {  /* Määrittää mikä kuva on kuva3 */
+
+/* Määrittää mikä kuva on kuva3 */
+.kuva3 {
   background-image: url('kissa2.jpg');
 }
 
-#kuva4 {  /* Määrittää mikä kuva on kuva4 */
+
+/* Määrittää mikä kuva on kuva4 */
+.kuva4 {
   background-image: url('kissa3.jpg');
 }
 
-article { /* Määrittää articlen korkeuden, tekstin värin, taustan värin ja tekstin korkeuden */
+
+/* Määrittää articlen korkeuden, tekstin värin, taustan värin ja tekstin korkeuden */
+article {
       height:50%;
       color: #F2F1F1;
       background-color: #C3C3C3;
