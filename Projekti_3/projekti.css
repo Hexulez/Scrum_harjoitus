@@ -1,0 +1,45 @@
+body, html {
+  height: 100%;
+  }
+
+.harrastus {
+    background-image: url('kissa2.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.harrastus2 {
+    background-image: url('kissa2.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.harrastus3 {
+    background-image: url('kissa2.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.kuva4 {
+    background-image: url('kissa2.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.tekstit {
+    height:500px;
+    background-color:powderblue;
+    font-size:20px
+    }
