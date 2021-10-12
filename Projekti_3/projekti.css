@@ -18,9 +18,9 @@ h1 {
   transform: translate(-50%, -50%);
 }
 h3 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  position: relative;
+  top: 50%;
 }
 
 section {
