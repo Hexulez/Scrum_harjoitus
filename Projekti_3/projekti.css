@@ -37,25 +37,33 @@ section {
 
 /* Määrittää kuvan 1 */
 .kuva1 {
-  background-image: url('https://cdn.pixabay.com/photo/2019/03/08/15/05/landscape-4042502_1280.jpg');
+  background-image: url(kuvat/Mountain.jpg);
+/* Jätän tämän vanhan linkin jos sattuu tarvitsemaan osoitetta
+  background-image: url('https://cdn.pixabay.com/photo/2019/03/08/15/05/landscape-4042502_1280.jpg');*/
 }
 
 
 /* Määrittää kuvan 2 */
 .kuva2 {
-  background-image: url('https://cdn4.picryl.com/photo/1929/01/01/white-house-dogs-medium-balls-92326-1024.jpg');
+  background-image: url(kuvat/white-house-dogs-medium-balls.jpg);
+  /* Jätän varoilta tämän
+  background-image: url('https://cdn4.picryl.com/photo/1929/01/01/white-house-dogs-medium-balls-92326-1024.jpg');*/
 }
 
 
 /* Määrittää kuvan 3 */
 .kuva3 {
-  background-image: url('https://p0.pxfuel.com/preview/937/172/877/snowboarding-sport-winter.jpg');
+  background-image: url(kuvat/snowboarding.jpg);
+  /* varoilta
+  background-image: url('https://p0.pxfuel.com/preview/937/172/877/snowboarding-sport-winter.jpg');*/
 }
 
 
 /* Määrittää kuvan 4 */
 .kuva4 {
-  background-image: url('https://i.redd.it/2s4g9jwr5us71.jpg');
+  background-image: url(kuvat/Warhammer_edit.jpg);
+  /*varoilta
+  background-image: url('https://i.redd.it/2s4g9jwr5us71.jpg');*/
 }
 
 
