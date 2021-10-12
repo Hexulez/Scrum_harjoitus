@@ -36,7 +36,7 @@ h2 {
   color: #911700;
   font-family: 'Zhi Mang Xing';
   font-size: 50px;
-  margin-bottom: 50px;
+
 }
 
 section {
@@ -123,20 +123,15 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
 
 @media only screen and (max-width: 950px) {
   .teksti {
-    height: 400px;
+    height: auto;
     color:blue; \\värin jätin tähän vain malliksi
   }
 }
-@media only screen and (max-width: 600px) {
-  .teksti{
-    height: 500px;
-    color: green;
 
-  }
-}
 @media screen and (max-height: 300px) {
   h2 {
     top: 10%;
+    margin:auto;
   }
 
 }
