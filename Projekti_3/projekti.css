@@ -19,7 +19,6 @@ h1 {
 h3 {
   position: absolute;
   left: 50%;
-  bottom: 50%;
   transform: translate(-50%, -50%);
 }
 
