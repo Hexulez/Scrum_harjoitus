@@ -1,7 +1,7 @@
 
 /* muuttaa sivut selaimen korkuisiksi */
 body, html {
-      height: 100%;
+      height: 100vh;
       }
 
 
@@ -36,6 +36,7 @@ h2 {
   color: #911700;
   font-family: 'Zhi Mang Xing';
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
 section {
@@ -46,7 +47,7 @@ section {
 
 /* Keskittää kuvan keskelle näyttöä */
 .kuva1, .kuva2, .kuva3, .kuva4 {
-      height: 100%;
+      height: 100vh;    /*säätää korkeuden sen kokoiseksi kun ikkuna tai näyttöon*/
       background-attachment: fixed;
       background-position: center;  /* Kuva keskelle */
       background-repeat: no-repeat; /* Kuvaa ei toisteta */
@@ -86,21 +87,26 @@ section {
 }
 
 
+
+
 /* Määrittää articlen korkeuden, tekstin värin, taustan värin ja tekstin korkeuden */
 article {
-      height:50%;
-      color: #B34936;
-      background-color: #FFE7E3;
-      font-size:20px;
-      }
+  height:50%;
+  min-height: 300px;
+  color: #B34936;
+  background-color: #FFE7E3;
+  font-size:20px;
+  }
 
 article p {
   padding: 6%;
   text-align: center;
+  margin:auto;
 }
 
 .ekaOsa {
   height:1%;
+  max-height: 1%;
   background-color: #FFE7E3;
 }
 
@@ -110,4 +116,27 @@ figure p {
   top: 50%;
   color: #B34936;
   font: 8px Arial;
+}
+
+/*media querryt tekevät pisteet missä sivun eri elementit saavat uudet arvot,
+ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
+
+@media only screen and (max-width: 950px) {
+  .teksti {
+    height: 400px;
+    color:blue; \\värin jätin tähän vain malliksi
+  }
+}
+@media only screen and (max-width: 600px) {
+  .teksti{
+    height: 500px;
+    color: green;
+
+  }
+}
+@media screen and (max-height: 300px) {
+  h2 {
+    top: 10%;
+  }
+
 }
