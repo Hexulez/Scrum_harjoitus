@@ -1,21 +1,24 @@
 
+/* muuttaa sivut selaimen korkuisiksi */
 body, html {
       height: 100%;
       }
 
 
 
-/* muuttaa sivut selaimen kokoiseksi */
+/* muuttaa sivut selaimen levyisiksi */
 * {
 margin: 0;
 padding: 0;
 }
 
+
+
 h1, h3 {
   text-align: center;
   position: relative;
   top: 50%;
-
+  color: #911700;
 }
 
 
@@ -70,7 +73,12 @@ section {
 /* Määrittää articlen korkeuden, tekstin värin, taustan värin ja tekstin korkeuden */
 article {
       height:50%;
-      color: #F2F1F1;
-      background-color: #C3C3C3;
-      font-size:20px
+      color: #B34936;
+      background-color: #FFE7E3;
+      font-size:20px;
       }
+
+article p {
+  padding: 6%;
+  text-align: center;
+}
