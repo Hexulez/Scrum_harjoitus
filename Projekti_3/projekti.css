@@ -14,7 +14,7 @@ padding: 0;
 
 
 
-h1, h3 {
+h1, h3, h2 {
   text-align: center;
   position: relative;
   top: 50%;
@@ -86,4 +86,12 @@ article p {
 .ekaOsa {
   height:1%;
   background-color: #FFE7E3;
+}
+
+figure p {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: #B34936;
+  font: 8px Arial;
 }
