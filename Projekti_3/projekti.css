@@ -10,7 +10,18 @@ margin: 0;
 padding: 0;
 }
 
-
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h3 {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
 
 section {
       height: 100%;
@@ -30,25 +41,25 @@ section {
 
 /* Määrittää mikä kuva on kuva1 */
 .kuva1 {
-  background-image: url('kissa2.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2019/03/08/15/05/landscape-4042502_1280.jpg');
 }
 
 
 /* Määrittää mikä kuva on kuva2 */
 .kuva2 {
-  background-image: url('kissa3.jpg');
+  background-image: url('https://cdn4.picryl.com/photo/1929/01/01/white-house-dogs-medium-balls-92326-1024.jpg');
 }
 
 
 /* Määrittää mikä kuva on kuva3 */
 .kuva3 {
-  background-image: url('kissa2.jpg');
+  background-image: url('https://p0.pxfuel.com/preview/937/172/877/snowboarding-sport-winter.jpg');
 }
 
 
 /* Määrittää mikä kuva on kuva4 */
 .kuva4 {
-  background-image: url('kissa3.jpg');
+  background-image: url('https://i.redd.it/2s4g9jwr5us71.jpg');
 }
 
 
