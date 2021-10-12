@@ -14,13 +14,20 @@ padding: 0;
 
 
 
-h1, h3, h2 {
+h1, h3 {
   text-align: center;
   position: relative;
   top: 50%;
   color: #911700;
 }
 
+h2 {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: #911700;
+  font-family: 'Zhi Mang Xing';
+}
 
 section {
       height: 100%;
