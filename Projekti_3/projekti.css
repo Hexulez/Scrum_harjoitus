@@ -1,3 +1,4 @@
+
 body, html {
       height: 100%;
       }
@@ -28,25 +29,25 @@ section {
       }
 
 
-/* Määrittää mikä kuva on kuva1 */
+/* Määrittää kuvan 1 */
 .kuva1 {
   background-image: url('kissa2.jpg');
 }
 
 
-/* Määrittää mikä kuva on kuva2 */
+/* Määrittää kuvan 2 */
 .kuva2 {
   background-image: url('kissa3.jpg');
 }
 
 
-/* Määrittää mikä kuva on kuva3 */
+/* Määrittää kuvan 3 */
 .kuva3 {
   background-image: url('kissa2.jpg');
 }
 
 
-/* Määrittää mikä kuva on kuva4 */
+/* Määrittää kuvan 4 */
 .kuva4 {
   background-image: url('kissa3.jpg');
 }
