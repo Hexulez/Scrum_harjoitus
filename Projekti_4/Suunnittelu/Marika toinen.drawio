@@ -1,34 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2021-10-14T20:40:25.472Z" agent="5.0 (Windows)" etag="1TZ36d4OkYH0Ejbo0qhk" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-14T20:59:56.275Z" agent="5.0 (Windows)" etag="bz208TJmxgpbOILC5LHO" version="15.4.3" type="github">
   <diagram id="Mz0PH9RjDExZOPukkT4R" name="Page-1">
-    <mxGraphModel dx="1213" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1473" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="gPleMcRT32Q30Q6WIATH-1" value="vaihtuva kuva, hidastuksella" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="gPleMcRT32Q30Q6WIATH-1" value="vaihtuva kuva, hidastuksella" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="3" width="820" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="gPleMcRT32Q30Q6WIATH-2" value="hinnasto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="gPleMcRT32Q30Q6WIATH-2" value="hinnasto" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="210" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="gPleMcRT32Q30Q6WIATH-3" value="ilmoittaudu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="gPleMcRT32Q30Q6WIATH-3" value="ilmoittaudu" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="210" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="gPleMcRT32Q30Q6WIATH-4" value="seminaari ja logo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="40" width="630" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="gPleMcRT32Q30Q6WIATH-5" value="tekstiä" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="gPleMcRT32Q30Q6WIATH-5" value="tekstiä" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="320" width="380" height="230" as="geometry" />
         </mxCell>
         <mxCell id="gPleMcRT32Q30Q6WIATH-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="610" y="460" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="gPleMcRT32Q30Q6WIATH-7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="610" y="350" width="120" height="90" as="geometry" />
+          <mxGeometry x="610" y="360" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="gPleMcRT32Q30Q6WIATH-8" value="yhteistyökump" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="610" y="250" width="120" height="90" as="geometry" />
+          <mxGeometry x="610" y="260" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="gPleMcRT32Q30Q6WIATH-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="gPleMcRT32Q30Q6WIATH-12" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="3" y="600" width="817" height="30" as="geometry" />
         </mxCell>
       </root>
