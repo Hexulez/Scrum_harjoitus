@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2021-10-14T20:39:02.525Z" agent="5.0 (Windows)" version="15.4.3" etag="Gh9eVjxJVhoiFKa8a2fS" type="github"><diagram id="5jNulMBCk2qbcnPB_fVQ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-14T20:47:15.505Z" agent="5.0 (Windows)" etag="6_n7wN7EAVdfeC1aKP37" version="15.4.3" type="github">
+  <diagram id="5jNulMBCk2qbcnPB_fVQ" name="Page-1">
+    <mxGraphModel dx="1473" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_lEYPxIEGOC4KpnFCUQz-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry width="820" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="_lEYPxIEGOC4KpnFCUQz-2" value="etusivu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_lEYPxIEGOC4KpnFCUQz-3" value="ilmoittaudu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_lEYPxIEGOC4KpnFCUQz-4" value="hinnat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="330" width="690" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="_lEYPxIEGOC4KpnFCUQz-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="580" width="820" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_lEYPxIEGOC4KpnFCUQz-6" value="seminaari&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;HINNASTO&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;logo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="30" width="680" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
