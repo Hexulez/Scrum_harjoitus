@@ -92,7 +92,7 @@ section {
 /* Määrittää articlen korkeuden, tekstin värin, taustan värin ja tekstin korkeuden */
 .teksti {
   height:50%; /*teksi alueen koko*/
-  min-height: 300px; /* pienin sallittu korkeus*/
+  min-height: 200px; /* pienin sallittu korkeus*/
   color: #B34936; /*tekstin väri*/
   background-color: #FFE7E3; /*väri kohdistuu teksi alueen pohjaksi*/
   font-size:20px; /*fontin koko*/

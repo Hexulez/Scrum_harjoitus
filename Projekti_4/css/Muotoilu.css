@@ -1,0 +1,27 @@
+.hinnasto {
+  margin:auto;
+  border: 2px black double;
+  height: 75vh;
+  width: 75vw;
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+
+thead{
+
+
+}
+tr {
+  border: 2px black solid;
+}
+
+th, td {
+  font-size: 1.4em;
+  border-right: 2px black solid;
+
+
+
+}
+td {
+  text-align: center;
+}
