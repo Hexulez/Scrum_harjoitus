@@ -1,0 +1,14 @@
+header {
+  background-image: url('../vesipisara.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid red;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  padding: 3%;
+  color: red;
+  }
