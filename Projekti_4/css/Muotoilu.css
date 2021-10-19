@@ -107,6 +107,8 @@ a:hover {
 
 footer {
   text-align: center;
+
+
 }
 
 
@@ -136,4 +138,10 @@ th, td {
 }
 td {
   text-align: center;
+}
+.box_of_the_many_things {
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+
 }
