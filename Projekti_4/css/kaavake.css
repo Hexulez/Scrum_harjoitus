@@ -12,3 +12,70 @@ h1 {
   padding: 3%;
   color: red;
   }
+
+  nav {
+    width: 98%;
+    height: 20px;
+    padding: 1%;
+    background-color: ;
+  }
+  .hinnastoMain {
+  float: left;
+  margin-left: 40%;
+  margin-right: 2%;
+  }
+
+  .kaavake {
+  float: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: red;
+  }
+form {
+  align: center;
+  width: 40%;
+  border: solid black 2px;
+
+}
+form label {
+  float:left;
+}
+.henkilotiedot {
+  margin-top: 10px;
+  padding: 10px 0px 50px 0px;
+}
+
+#etunimet {
+  float:right;
+  margin-right: 300px;
+}
+#sukunimi{
+  float:right;
+  margin-right: 300px;
+}
+#syntymaaika {
+  float:right;
+  margin-right: 300px;
+}
+#sukupuoli {
+  float:right;
+  margin-right: 410px;
+}
+#osoite {
+  float:right;
+  margin-right: 300px;
+}
+#postinumero {
+  float:right;
+  margin-right: 300px;
+}
+#postitoimipaikka {
+  float:right;
+  margin-right: 300px;
+}
