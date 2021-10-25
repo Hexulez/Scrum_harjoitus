@@ -38,44 +38,23 @@ h1 {
     color: red;
   }
 form {
-  align: center;
-  width: 40%;
-  border: solid black 2px;
+width: 40%;
+border: solid black 2px;
+position: relative;
+left: 30%;
+}
 
-}
-form label {
-  float:left;
-}
+
 .henkilotiedot {
   margin-top: 10px;
-  padding: 10px 0px 50px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
-#etunimet {
-  float:right;
-  margin-right: 300px;
+.henkilotiedot input {
+  margin: inherit;
+  
 }
-#sukunimi{
-  float:right;
-  margin-right: 300px;
-}
-#syntymaaika {
-  float:right;
-  margin-right: 300px;
-}
+
 #sukupuoli {
-  float:right;
-  margin-right: 410px;
-}
-#osoite {
-  float:right;
-  margin-right: 300px;
-}
-#postinumero {
-  float:right;
-  margin-right: 300px;
-}
-#postitoimipaikka {
-  float:right;
-  margin-right: 300px;
-}
+margin: inherit;
+ }
