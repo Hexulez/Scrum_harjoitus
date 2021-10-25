@@ -50,11 +50,32 @@ left: 30%;
   padding: 10px 0px 20px 0px;
 }
 
+
 .henkilotiedot input {
   margin: inherit;
-  
+
 }
 
+
+#etunimet {
+    margin-left: 15%;
+}
+#sukunimi {
+    margin-left: 14.5%;
+}
+#syntymaaika {
+    margin-left: 11.5%;
+}
 #sukupuoli {
-margin: inherit;
- }
+  margin: inherit;
+    margin-left: 14%;
+}
+#osoite {
+    margin-left: 17.2%;
+}
+#postinumero {
+    margin-left: 24%;
+}
+#postitoimipaikka {
+    margin-left: 24%;
+}
