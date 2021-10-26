@@ -90,7 +90,7 @@ a:hover {
   background-color: ;
 }
 
-.logo1, .logo2, .logo3 {
+.logo1, .logo2, .logo3, .isologo {
   width: 30%;
   animation-name: fade;
   animation-duration: 7s;
@@ -167,9 +167,10 @@ textarea {
   width: 70%;
 }
 .kaavakelogo {
+  height: 20%;
   width: 15%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 10%;
 }
 button {
