@@ -42,6 +42,8 @@ width: 40%;
 border: solid black 2px;
 position: relative;
 left: 30%;
+background-color: #FF5C58;
+font-family: 'Oswald', sans-serif;
 }
 
 
@@ -54,4 +56,17 @@ left: 30%;
 .henkilotiedot input {
   margin: inherit;
   width: 70%;
+  margin-left: 10px;
+}
+.henkilotiedot label {
+  margin-left: 10px;
+}
+.henkilotiedot select {
+  margin-left: 10px;
+}
+textarea {
+  width: 70%;
+}
+.checkbox input {
+  margin-left: auto;
 }

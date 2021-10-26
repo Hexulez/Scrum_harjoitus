@@ -7,7 +7,7 @@
     <meta name="keywords" content=""> <!-- avain sanat millä hakukone löytää-->
     <meta name="author" content=""> <!--Kirjoittaja-->
     <link rel="stylesheet" href="css/kaavake.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <title>Ilmottautuminen</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
 
       <nav>
                   <a class="hinnastoMain" href="hinnasto.html">HINNASTO</a>
-                  <a class="kaavake" target="_blank" href="kaavake.html">ILMOITTAUTUMINEN</a> <!-- tuleeko tähän ja avataanko uuteen välilehteen? -->
+                  <a class="kaavake" href="kaavake.html">ILMOITTAUTUMINEN</a> <!-- tuleeko tähän ja avataanko uuteen välilehteen? -->
       </nav>
 
         <form class="henkilotiedot" action="" method="">
@@ -51,14 +51,17 @@
 <br>
 
       <form class="checkbox" action="index.html" method="post">
-        <label for="Esimerkki">Lapsi</label>
-        <input type="checkbox" id="Lapsi" value=""><br>
+        <input type="checkbox" id="Lapsi" name=""Lapsi>
+        <label for="Lapsi">Lapsi</label>
+        <br>
+        <input type="checkbox" id="Opiskelija" value="">
         <label for="Esimerkki">Opiskelija</label>
-        <input type="checkbox" id="Opiskelija" value=""><br>
+        <br>
+        <input type="checkbox" id="Aikuinen" value="">
         <label for="Esimerkki">Aikuinen</label>
-        <input type="checkbox" id="Aikuinen" value=""><br>
-        <label for="Esimerkki">Eläkeläinen</label>
+        <br>
         <input type="checkbox" id="Eläkeläinen" value="">
+        <label for="Esimerkki">Eläkeläinen</label>
         <!--tapahtuma tiedot jne-->
       </form>
 <br>
