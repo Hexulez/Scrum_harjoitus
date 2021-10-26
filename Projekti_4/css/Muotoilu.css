@@ -167,7 +167,7 @@ textarea {
   width: 70%;
 }
 .kaavakelogo {
-  width: 30%;
+  width: 15%;
   position: absolute;
   top: 40%;
   left: 10%;
@@ -176,4 +176,8 @@ button {
 position: relative;
 left: 22.5%;
 margin-bottom: 0.5%;
+}
+
+.isologo {
+width: 100%;
 }
