@@ -107,10 +107,7 @@ a:hover {
 
 footer {
   text-align: center;
-
-
 }
-
 
 .hinnasto {
   margin:auto;
@@ -165,4 +162,13 @@ border-radius: 10px;
 .henkilotiedot input {
   margin: inherit;
   width: 70%;
+}
+textarea {
+  width: 70%;
+}
+.kaavakelogo {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
 }
