@@ -22,32 +22,41 @@
       </nav>
 
         <form class="henkilotiedot" action="" method="">
-          <label for="etunimet">Etunimet:</label><br>
+          <label for="etunimet">Etunimet:*</label><br>
           <input type="text" id="etunimet" placeholder="Etunimet" required>
           <br>
-          <label for="sukunimi">Sukunimi:</label><br>
+          <label for="sukunimi">Sukunimi:*</label><br>
           <input type="text" id="sukunimi" placeholder="Sukunimi" required>
           <br>
-          <label for="syntymaaika">Syntymäaika:</label><br>
+          <label for="syntymaaika">Syntymäaika:*</label><br>
           <input type="text" id="syntymaaika" placeholder="Syntymäaika" required>
           <br>
-          <label for="sukupuoli">Sukupuoli:</label><br>
+          <label for="sukupuoli">Sukupuoli:*</label><br>
           <select id="sukupuoli" name="Sukupuoli" required>
           <option value=""></option>
           <option value="mies">Mies</option>
           <option value="nainen">Nainen</option>
           <option value="muu">Muu</option>
           </select>
-          <br>
-          <label for="osoite">Osoite:</label><br>
-          <input type="text" id ="osoite" placeholder="Osoite" required>
-          <br>
-          <label for="postinumero">Postinumero ja postitoimipaikka:</label><br>
-          <input type="text" id ="postinumero" placeholder="Postinumero" required><br>
-          <input type="postitoimipaikka" id="postitoimipaikka" placeholder="Postitoimipaikka" required>
-          <br>
-          <!--tähän nimet, henkilötiedot, osoitteet, jnw-->
+
         </form>
+<br>
+
+<form class="yhteystiedot" action="index.html" method="post">
+  <label for="osoite">Osoite:*</label><br>
+  <input type="text" id ="osoite" placeholder="Osoite" required>
+  <br>
+  <label for="postinumero">Postinumero ja postitoimipaikka:*</label><br>
+  <input type="text" id ="postinumero" placeholder="Postinumero" required><br>
+  <input type="postitoimipaikka" id="postitoimipaikka" placeholder="Postitoimipaikka" required>
+  <br>
+  <label for="puhelinnumero">Puhelinnumero:*</label><br>
+  <input type="text" id="puhelinnumero" placeholder="puhelinnumero" required>
+  <br>
+  <label for="sahkoposti">Sähköposti:</label><br>
+  <input type="text" id="sahkoposti" placeholder="Sähköposti">
+</form>
+
 <br>
 
       <form class="checkbox" action="index.html" method="post">
@@ -65,13 +74,13 @@
         <!--tapahtuma tiedot jne-->
       </form>
 <br>
-      <form class="" action="index.html" method="post">
+      <form class="lisatiedot" action="index.html" method="post">
 <label for="lisatiedot"><strong>Lisätiedot</strong>:</label><br>
 <textarea name="lisatiedot" rows="8" cols="80"></textarea>
 <button type="button" name="button">Lähetä</button>
       </form>
+<br>
 
-      <!--lisää tähän tarvittaessa lisää laatikoita tiedoille -->
 <div class="kaavakelogo">
       <div class="isologo">
           <img class="logo1, isologo" src="kuvat/logo1.jpg" alt="logo1">
@@ -84,6 +93,6 @@
       </div>
 </div>
     </main>
-    <footer> <!-- tehdään pääsivulle ja kopioidaan tänne --></footer>
+    <footer>Yhteystietoja Marika Koponen | Henry Juhola | Yan Roos</footer>
   </body>
 </html>
