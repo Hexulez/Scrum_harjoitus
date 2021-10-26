@@ -42,6 +42,9 @@ width: 40%;
 border: solid black 2px;
 position: relative;
 left: 30%;
+background-color: #FF5C58;
+font-family: 'Oswald', sans-serif;
+border-radius: 10px;
 }
 
 

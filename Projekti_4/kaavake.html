@@ -7,7 +7,7 @@
     <meta name="keywords" content=""> <!-- avain sanat millä hakukone löytää-->
     <meta name="author" content=""> <!--Kirjoittaja-->
     <link rel="stylesheet" href="css/kaavake.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <title>Ilmottautuminen</title>
   </head>
   <body>
@@ -23,16 +23,16 @@
 
         <form class="henkilotiedot" action="" method="">
           <label for="etunimet">Etunimet:</label><br>
-          <input type="text" id="etunimet" placeholder="Etunimet">
+          <input type="text" id="etunimet" placeholder="Etunimet" required>
           <br>
           <label for="sukunimi">Sukunimi:</label><br>
-          <input type="text" id="sukunimi" placeholder="Sukunimi">
+          <input type="text" id="sukunimi" placeholder="Sukunimi" required>
           <br>
           <label for="syntymaaika">Syntymäaika:</label><br>
-          <input type="text" id="syntymaaika" placeholder="Syntymäaika">
+          <input type="text" id="syntymaaika" placeholder="Syntymäaika" required>
           <br>
           <label for="sukupuoli">Sukupuoli:</label><br>
-          <select id="sukupuoli" name="Sukupuoli">
+          <select id="sukupuoli" name="Sukupuoli" required>
           <option value=""></option>
           <option value="mies">Mies</option>
           <option value="nainen">Nainen</option>
@@ -40,25 +40,28 @@
           </select>
           <br>
           <label for="osoite">Osoite:</label><br>
-          <input type="text" id ="osoite" placeholder="Osoite">
+          <input type="text" id ="osoite" placeholder="Osoite" required>
           <br>
           <label for="postinumero">Postinumero ja postitoimipaikka:</label><br>
-          <input type="text" id ="postinumero" placeholder="Postinumero"><br>
-          <input type="postitoimipaikka" id="postitoimipaikka" placeholder="Postitoimipaikka">
+          <input type="text" id ="postinumero" placeholder="Postinumero" required><br>
+          <input type="postitoimipaikka" id="postitoimipaikka" placeholder="Postitoimipaikka" required>
           <br>
           <!--tähän nimet, henkilötiedot, osoitteet, jnw-->
         </form>
 <br>
 
       <form class="checkbox" action="index.html" method="post">
-        <label for="Esimerkki">Lapsi</label>
-        <input type="checkbox" id="Lapsi" value=""><br>
+        <input type="checkbox" id="Lapsi" name=""Lapsi>
+        <label for="Lapsi">Lapsi</label>
+        <br>
+        <input type="checkbox" id="Opiskelija" value="">
         <label for="Esimerkki">Opiskelija</label>
-        <input type="checkbox" id="Opiskelija" value=""><br>
+        <br>
+        <input type="checkbox" id="Aikuinen" value="">
         <label for="Esimerkki">Aikuinen</label>
-        <input type="checkbox" id="Aikuinen" value=""><br>
-        <label for="Esimerkki">Eläkeläinen</label>
+        <br>
         <input type="checkbox" id="Eläkeläinen" value="">
+        <label for="Esimerkki">Eläkeläinen</label>
         <!--tapahtuma tiedot jne-->
       </form>
 <br>
