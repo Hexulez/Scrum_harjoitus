@@ -197,16 +197,9 @@ margin-bottom: 20px;
 }
 
 
-
 /*media querryt tekevät pisteet missä sivun eri elementit saavat uudet arvot,
 ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
 
-/* @media screen and (max-width: 1200px) {
-.box_of_the_many_things {
-  width: 80%;
-}
-}
-*/
 @media screen and (max-width: 1100px) {
   .laatikko {
     width: 100%;
