@@ -55,8 +55,8 @@
   <input type="text" id ="osoite" placeholder="Osoite" required>
   <br>
   <label for="postinumero">Postinumero ja postitoimipaikka:*</label><br>
-  <input type="text" id ="postinumero" placeholder="Postinumero" required><br>
-  <input type="postitoimipaikka" id="postitoimipaikka" placeholder="Postitoimipaikka" required>
+  <input type="number" id ="postinumero" placeholder="Postinumero" required><br>
+  <input type="text" id="postitoimipaikka" placeholder="Postitoimipaikka" required>
   <br>
   <label for="puhelinnumero">Puhelinnumero:*</label><br>
   <input type="tel" id="puhelinnumero" placeholder="puhelinnumero" required>
@@ -88,7 +88,7 @@
       <form class="lisatiedot" action="index.html" method="post">
 <label for="lisatiedot"><strong>Lisätiedot</strong>:</label><br>
 <textarea name="lisatiedot" rows="8" cols="80"></textarea>
-<button type="button" name="button">Lähetä</button>
+<button type="submit" name="button">Lähetä</button>
       </form>
 
     </div>

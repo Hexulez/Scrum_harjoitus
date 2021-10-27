@@ -309,3 +309,24 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
       margin-bottom: -100px;
     }
 }
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 30vw;
+  }
+  .right_logo {
+    position:   relative;
+    left: 250px;
+    bottom: 240px;
+    width: 30vw;
+    }
+    .middle_logo {
+      position: relative;
+      bottom: 130px;
+      left: 150px;
+      width: 30vw;
+    }
+    .laatikko {
+      margin-bottom: -100px;
+    }
+}
