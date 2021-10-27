@@ -94,7 +94,7 @@ a:hover {
   background-color: ;
 }
 
-.logo1, .logo2, .logo3, .isologo, .hinlogo {
+.logo1, .logo2, .logo3, .isologo,  {
   width: 30%;
   animation-name: fade;
   animation-duration: 7s;
@@ -147,6 +147,8 @@ td {
 }
 .hinlogo {
   height: 99%;
+  animation-name: fade;
+  animation-duration: 7s;
 }
 
 form {
