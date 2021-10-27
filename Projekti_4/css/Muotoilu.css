@@ -53,7 +53,7 @@ a:hover {
 }
 
 .väli {
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: 5%;
 }
 
@@ -186,7 +186,7 @@ textarea {
   height: 25%;
   width: 15%;
   position: absolute;
-  top: 30%;
+  top: 70%;
   left: 10%;
 }
 
@@ -201,11 +201,7 @@ width: 100%;
 margin-bottom: 20px;
 }
 
-@media screen and (min-height: 480px) {
-  .kaavakelogo {
-    top: 35%;
-  }
-}
+
 
 @media screen and (max-width: 1000px) {
   .laatikko {
@@ -213,11 +209,37 @@ margin-bottom: 20px;
   }
 }
 
+
+
 @media screen and (max-width: 480px) {
   nav {
     height: auto;
   }
+
+  .hinnasto {
+    width: 30vh;
+    height: 30vw;
+  }
+
+  .hinlogo {
+    width: 30%;
+    height: 30%;
+    margin-top: 10%;
+  }
+
+  th, td {
+    font-size: 0.9em;
+  }
+
+  .väli {
+    margin-top: 10%;
+  }
 }
+
+
+
+
+
 
 
 
