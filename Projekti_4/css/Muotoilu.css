@@ -158,7 +158,15 @@ border-radius: 10px;
 padding: 10px 5px 10px 5px;
 }
 
+.checkbox label {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
 
+.checkbox input {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
 
 
 
