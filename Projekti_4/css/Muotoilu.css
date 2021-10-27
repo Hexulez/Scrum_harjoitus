@@ -208,10 +208,8 @@ textarea {
   top: 40%;
   left: 10%;
 }
-button {
-position: relative;
-left: 22.5%;
-margin-bottom: 0.5%;
+.lisatiedot button {
+margin-left: 160px;
 }
 
 .isologo {
