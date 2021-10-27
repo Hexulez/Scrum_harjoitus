@@ -208,7 +208,29 @@ margin-bottom: 20px;
 @media screen and (max-width: 1000px) {
   .laatikko {
     width: 100%;
+    margin-bottom: -200px;
   }
+
+.logo {
+  width: 30vw;
+}
+.right_logo {
+  position:   relative;
+  left: 550px;
+  bottom: 240px;
+  width: 30vw;
+  }
+  .middle_logo {
+    position: relative;
+    bottom: 130px;
+    left: 300px;
+    width: 30vw;
+  }
+  .logo1, .logo2, .logo3 {
+    width: 100%;
+  }
+
+
 }
 
 
@@ -258,8 +280,9 @@ margin-bottom: 20px;
      50% {
        opacity: 0;
   }
-}
 
+}
+}
 
 @media screen and (min-width: 1000px) {
    .laatikko h2 {
@@ -274,4 +297,26 @@ margin-bottom: 20px;
      50% {
        opacity: 0;
   }
+  }
+
+}
+@media screen and (max-width: 785px) {
+  .logo {
+    width: 30vw;
+  }
+  .right_logo {
+    position:   relative;
+    left: 350px;
+    bottom: 240px;
+    width: 30vw;
+    }
+    .middle_logo {
+      position: relative;
+      bottom: 130px;
+      left: 200px;
+      width: 30vw;
+    }
+    .laatikko {
+      margin-bottom: -100px;
+    }
 }
