@@ -186,14 +186,20 @@ textarea {
   height: 25%;
   width: 15%;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 10%;
 }
+<<<<<<< HEAD
 
 button {
 position: relative;
 left: 22.5%;
 margin-bottom: 0.5%;
+=======
+.lisatiedot button {
+float:right;
+margin-top: 14%;
+>>>>>>> 58efeca1a11a33509c84113850e430af44f73c5c
 }
 
 .isologo {
@@ -203,7 +209,7 @@ margin-bottom: 20px;
 
 @media screen and (min-height: 480px) {
   .kaavakelogo {
-    top: 35%;
+    top: 45%;
   }
 }
 
