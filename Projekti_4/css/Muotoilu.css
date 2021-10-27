@@ -98,7 +98,7 @@ a:hover {
   background-color: ;
 }
 
-.logo1, .logo2, .logo3, .isologo {
+.logo1, .logo2, .logo3, .isologo, .hinlogo {
   width: 30%;
   animation-name: fade;
   animation-duration: 7s;
@@ -157,8 +157,11 @@ td {
   width: 98vw;
   height: 300px;
   overflow: hidden;
-
 }
+.hinlogo {
+  height: 99%;
+}
+
 form {
 width: 40%;
 border: solid black 2px;
@@ -171,21 +174,24 @@ padding: 10px 5px 10px 5px;
 }
 
 .checkbox label {
+  width: 5%;
   margin-left: 5px;
   margin-bottom: 10px;
 }
 
 .checkbox input {
+  width: 5%;
   margin-left: 5px;
   margin-bottom: 10px;
 }
-
-
 
 .henkilotiedot input {
   margin: inherit;
   width: 70%;
 }
+
+
+
 .yhteystiedot input {
   margin: inherit;
   width: 70%;
