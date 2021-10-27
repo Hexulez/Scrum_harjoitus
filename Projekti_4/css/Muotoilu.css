@@ -52,6 +52,10 @@ a:hover {
   color: #db222a;
 }
 
+.väli {
+  margin-top: 5%;
+}
+
 .tekstiLogoTeksti
 {
   width: 90%;
@@ -110,7 +114,16 @@ a:hover {
 }
 
 footer {
+  position: fixed;
+  bottom:0;
+  width: 98%;
+  height: 20px;
+  padding: 1%;
+  background-color: black;
+  border-top: 1px solid red;
   text-align: center;
+  color: red;
+
 }
 
 .hinnasto {
