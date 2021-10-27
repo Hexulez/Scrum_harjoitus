@@ -209,7 +209,8 @@ textarea {
   left: 10%;
 }
 .lisatiedot button {
-margin-left: 160px;
+float:right;
+margin-top: 14%;
 }
 
 .isologo {
