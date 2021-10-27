@@ -205,7 +205,7 @@ textarea {
   height: 25%;
   width: 15%;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 10%;
 }
 button {
@@ -220,7 +220,7 @@ margin-bottom: 20px;
 }
 @media screen and (min-height: 480px) {
   .kaavakelogo {
-    top: 35%;
+    top: 45%;
   }
 }
 
