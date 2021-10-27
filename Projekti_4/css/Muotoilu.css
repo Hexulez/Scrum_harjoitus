@@ -127,7 +127,7 @@ td {
 }
 
 .box_of_the_many_things {
-  width: 99%;
+  width: 95vw;
   height: 350px;
   padding-bottom: 5px;
   margin-bottom: 5px;
@@ -135,10 +135,9 @@ td {
   overflow: hidden;
 }
 
-.hinlogo {
-  width: 30%
 
-}
+
+
 
 form {
 width: 40%;
@@ -257,7 +256,7 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
 
 
 @media screen and (min-width: 1100px) {
-   .logo1, .logo2, .logo3, .isologo, .hinlogo {
+   .logo1, .logo2, .logo3, .isologo, {
      animation-name: fade; /* Animaation nimi keyframesta varten */
      animation-duration: 7s; /* Kesto animaatiolle */
       width: 40%;
@@ -271,7 +270,11 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
   }
 
 }
-
+.hinlogo {
+  width: 30%
+  animation-duration: 7s; /* Kesto animaatiolle */
+  animation-name: fade; /* Animaation nimi keyframesta varten */
+}
 }
 
 @media screen and (min-width: 1000px) {
