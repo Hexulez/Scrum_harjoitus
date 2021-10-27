@@ -38,7 +38,7 @@ nav {
 
 .hinnastoMain, .kaavake, .etusivu {
   float: inherit;
-  color: red;
+  color: #db222a;
   margin: 2%;
 }
 
@@ -49,7 +49,7 @@ a {
 }
 
 a:hover {
-  color: #db222a;
+  color: red;
 }
 
 .väli {
@@ -60,7 +60,6 @@ a:hover {
 .tekstiLogoTeksti
 {
   width: 90%;
-  background-color: ;
   height: 400px;
   margin-left: 5%;
 }
@@ -85,7 +84,6 @@ a:hover {
 .logo {
   width: 100%;
   height: 130px;
-  background-color: ;
 }
 
 .logo1, .logo2, .logo3, .isologo, .hinlogo {
@@ -95,16 +93,16 @@ a:hover {
 
 
 footer {
-  position: fixed;
+  position: fixed; /* Footer pysyy kokoajan näytön alareunassa */
   bottom:0;
+
   width: 98%;
   height: 20px;
-  padding: 1%;
+  padding: 1%; /* jättää tilan tekstin ympärille */
   background-color: black;
-  border-top: 1px solid red;
+  border-top: 1px solid red; /* footerin yläosaan viiva */
   text-align: center;
-  color: red;
-
+  color: #db222a;
 }
 
 .hinnasto {
@@ -117,9 +115,8 @@ footer {
 }
 
 thead{
-
-
 }
+
 tr {
   border: 2px black solid;
 }
@@ -128,17 +125,17 @@ th, td {
   font-size: 1.4em;
   border-right: 2px black solid;
 
-
-
 }
 td {
   text-align: center;
 }
+
 .box_of_the_many_things {
   width: 98vw;
   height: 300px;
   overflow: hidden;
 }
+
 .hinlogo {
   height: 99%;
 }
@@ -153,7 +150,6 @@ font-family: 'Oswald', sans-serif;
 border-radius: 10px;
 padding: 10px 5px 10px 5px;
 }
-
 
 .checkbox label {
   width: 5%;
@@ -172,8 +168,6 @@ padding: 10px 5px 10px 5px;
   width: 70%;
 }
 
-
-
 .yhteystiedot input {
   margin: inherit;
   width: 70%;
@@ -182,6 +176,7 @@ padding: 10px 5px 10px 5px;
 textarea {
   width: 70%;
 }
+
 .kaavakelogo {
   height: 25%;
   width: 15%;
@@ -202,6 +197,8 @@ margin-bottom: 20px;
 }
 
 
+/*media querryt tekevät pisteet missä sivun eri elementit saavat uudet arvot,
+ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
 
 @media screen and (max-width: 1000px) {
   .laatikko {
@@ -211,8 +208,8 @@ margin-bottom: 20px;
 
 
 
-@media screen and (max-width: 480px) {
-  nav {
+@media screen and (max-width: 480px) { /*  */
+  nav { /* muuttaa navigointi palkin niin, että tekstit ovat sen sisällä */
     height: auto;
   }
 
@@ -237,21 +234,15 @@ margin-bottom: 20px;
 }
 
 
-
-
-
-
-
-
 @media screen and (min-width: 1000px) {
    .logo1, .logo2, .logo3, .isologo, .hinlogo {
-     animation-name: fade;
-     animation-duration: 7s;
+     animation-name: fade; /* Animaation nimi keyframesta varten */
+     animation-duration: 7s; /* Kesto animaatiolle */
    }
 
-   @keyframes fade {
+   @keyframes fade {  /* Määritellään mitä animaatio tekee */
      0% {
-       opacity: 0;
+       opacity: 0;  /* Läpinäkyvyys */
      }
      50% {
        opacity: 0;
@@ -261,13 +252,13 @@ margin-bottom: 20px;
 
 @media screen and (min-width: 1000px) {
    .laatikko h2 {
-     animation-name: fade;
-     animation-duration: 3s;
+     animation-name: fade; /* Animaation nimi keyframesta varten */
+     animation-duration: 3s; /* Kesto animaatiolle */
    }
 
-   @keyframes fade {
+   @keyframes fade {  /* Määritellään mitä animaatio tekee */
      0% {
-       opacity: 0;
+       opacity: 0; /* Läpinäkyvyys */
      }
      50% {
        opacity: 0;
