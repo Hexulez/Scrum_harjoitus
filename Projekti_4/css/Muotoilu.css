@@ -197,3 +197,9 @@ margin-bottom: 20px;
     top: ;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .laatikko {
+    width: 100%;
+  }
+}
