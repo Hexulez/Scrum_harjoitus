@@ -159,21 +159,24 @@ padding: 10px 5px 10px 5px;
 }
 
 .checkbox label {
+  width: 5%;
   margin-left: 5px;
   margin-bottom: 10px;
 }
 
 .checkbox input {
+  width: 5%;
   margin-left: 5px;
   margin-bottom: 10px;
 }
-
-
 
 .henkilotiedot input {
   margin: inherit;
   width: 70%;
 }
+
+
+
 .yhteystiedot input {
   margin: inherit;
   width: 70%;
