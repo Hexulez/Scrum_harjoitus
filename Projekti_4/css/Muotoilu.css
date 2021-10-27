@@ -76,17 +76,6 @@ a:hover {
 
 .laatikko h2 {
   color: #db222a;
-  animation-name: fade;
-  animation-duration: 3s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
 }
 
 .laatikko p {
@@ -101,18 +90,9 @@ a:hover {
 
 .logo1, .logo2, .logo3, .isologo, .hinlogo {
   width: 30%;
-  animation-name: fade;
-  animation-duration: 7s;
-}
+  }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-}
+
 
 footer {
   position: fixed;
@@ -174,6 +154,7 @@ border-radius: 10px;
 padding: 10px 5px 10px 5px;
 }
 
+
 .checkbox label {
   width: 5%;
   margin-left: 5px;
@@ -208,6 +189,7 @@ textarea {
   top: 30%;
   left: 10%;
 }
+
 button {
 position: relative;
 left: 22.5%;
@@ -218,6 +200,7 @@ margin-bottom: 0.5%;
 width: 100%;
 margin-bottom: 20px;
 }
+
 @media screen and (min-height: 480px) {
   .kaavakelogo {
     top: 35%;
@@ -227,5 +210,44 @@ margin-bottom: 20px;
 @media screen and (max-width: 1000px) {
   .laatikko {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    height: auto;
+  }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+   .logo1, .logo2, .logo3, .isologo, .hinlogo {
+     animation-name: fade;
+     animation-duration: 7s;
+   }
+
+   @keyframes fade {
+     0% {
+       opacity: 0;
+     }
+     50% {
+       opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+   .laatikko h2 {
+     animation-name: fade;
+     animation-duration: 3s;
+   }
+
+   @keyframes fade {
+     0% {
+       opacity: 0;
+     }
+     50% {
+       opacity: 0;
   }
 }
