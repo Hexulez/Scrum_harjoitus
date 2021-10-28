@@ -181,7 +181,7 @@ textarea {
   height: 25%;
   width: 15%;
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 10%;
 }
 
@@ -272,6 +272,8 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
 
   .isologo {
     width: 80%;
+    animation-name: fade;
+    animation-duration: 7s;
   }
 
   .logo1, .logo2, .logo3 {
