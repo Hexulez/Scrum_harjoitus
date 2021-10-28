@@ -229,7 +229,13 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
   }
   .logo1, .logo2, .logo3 {
     width: 100%;
+    margin-top: -25%;
+
   }
+  .teksti {
+    margin-top: -20%;
+  }
+
 
 
 }
@@ -264,7 +270,11 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
 
 @media screen and (min-width: 1100px) {
 
-  .logo1, .logo2, .logo3, .isologo {
+  .isologo {
+    width: 80%;
+  }
+
+  .logo1, .logo2, .logo3 {
     width: 40%;
     animation-name: fade; /* Animaation nimi keyframesta varten */
     animation-duration: 7s; /* Kesto animaatiolle */
@@ -318,6 +328,9 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
     .laatikko {
       margin-bottom: -100px;
     }
+    .teksti {
+      margin-top: -15%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -339,4 +352,8 @@ ja uusista arvoista johtuen skaalautuu halutusti erikokoisille näytöille*/
     .laatikko {
       margin-bottom: -100px;
     }
+
+  .teksti {
+    margin-top: -35%;
+  }
 }
