@@ -37,7 +37,39 @@
 
 
           <!-- Henkka säätää taas omiaan =) -->
+              <label for="pudotus">Kuinka hyvä olet Ohjelmoimaan?</label>
+              <select class="textbox" id="pudotus">
+                <option value="" disabled hidden>Kuinka hyvä olet?</option>
+                <option value="huono">Huono</option>
+                <option value="kohtalainen">Kohtalainen</option>
+                <option value="hyva">Hyvä</option>
+                <option value="paras">Paras</option>
 
+              </select>
+              <br>
+              <label for="">Suosikki osuus projektissa?</label>
+              <input type="radio" id="html" name="mielipide" value="html">
+              <label for="html">HTML</label>
+              <input type="radio" id="css" name="mielipide" value="css">
+              <label for="">CSS</label>
+              <input type="radio" id="javascript" name="mielipide" value="javascript">
+              <label for="javascript">Javascript</label>
+              <br>
+
+              <label for="">Mitä kieliä tahtoisit oppia?</label>
+              <input type="checkbox" id="java" name="oppia" value="java">
+              <label for="java">Java</label>
+              <input type="checkbox" id="python" name="oppia" value="python">
+              <label for="python">Python</label>
+              <input type="checkbox" id="c" name="oppia" value="c">
+              <label for="c">C</label>
+              <input type="checkbox" id="php" name="oppia" value="php">
+              <label for="php">PHP</label>
+              <br>
+              <label for="palaute"></label>
+              <textarea id="palaute"  rows="8" cols="180"></textarea>
+
+              <input type="submit" id="laheta"  value="">
           </form>
 
         </main>
