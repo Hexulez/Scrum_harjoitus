@@ -1,25 +1,23 @@
 function Tarkasta() {
 
-var nimi = document.getElementById('nimi').value;
+let nimi = document.getElementById('nimi').value;
 
 if(nimi.length < 2)
 {
 alert("Et antanut nimeäsi");
-form.nimi.focus();
 return false;
 }
 }
 
 function Tarkasta() {
 
-var email = document.getElementById('email').value;
+let email = document.getElementById('email').value;
 
 function emailIsValid (email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
   if(emailIsValid(sahkoposti)) {
     // else?
     alert("Anna oikea sähköpostiosoitteesi");
-  form.email.focus();
   return (false);
 }
 }
@@ -27,12 +25,11 @@ function emailIsValid (email) {
 
 function Tarkasta() {
 
-var ika = document.getElementById('ika').value;
+let ika = document.getElementById('ika').value;
 
 if(ika == string)
 {
 alert("Syötä numero");
-form.ika.focus();
 return false;
 }
 }
@@ -53,19 +50,7 @@ function droppi() {
   }
 
 
-  // Nämä eivät vielä ole valmiita eikä toimi
-function radiot() {
-  //seuraava ottaa kaikki ne radio nappulat tarkasteluun missä name arvo on mielipide
-  let satunnainenMuuttujaNimi = getElementsByTagName("mielipide")
-  // Ei ole suositeltavaa kierrättää samaa muuttuja nimeä,
-  //mutta se on mahdollista.
-  //Tosin siten saattaa helposti tehdä virheitä joita on todella vaikea löytää.
-  for (let i = 0; i < satunnainenMuuttujaNimi.length; i++) {
-    if
-  }
 
-  }
-}
 
 
 
