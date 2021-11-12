@@ -1,4 +1,4 @@
-function Tarkasta() {
+function nimi() {
 
 let nimi = document.getElementById('nimi').value;
 
@@ -9,7 +9,7 @@ return false;
 }
 }
 
-function Tarkasta() {
+function email() {
 
 let email = document.getElementById('email').value;
 
@@ -23,7 +23,7 @@ function emailIsValid (email) {
 }
 
 
-function Tarkasta() {
+function ika() {
 
 let ika = document.getElementById('ika').value;
 
@@ -50,7 +50,19 @@ function droppi() {
   }
 
 
+  // Nämä eivät vielä ole valmiita eikä toimi
+function radiot() {
+  //seuraava ottaa kaikki ne radio nappulat tarkasteluun missä name arvo on mielipide
+  let satunnainenMuuttujaNimi = getElementsByTagName("mielipide")
+  // Ei ole suositeltavaa kierrättää samaa muuttuja nimeä,
+  //mutta se on mahdollista.
+  //Tosin siten saattaa helposti tehdä virheitä joita on todella vaikea löytää.
+  for (let i = 0; i < satunnainenMuuttujaNimi.length; i++) {
+    if
+  }
 
+  }
+}
 
 
 
