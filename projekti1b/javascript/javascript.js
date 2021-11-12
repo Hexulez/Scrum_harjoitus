@@ -1,4 +1,5 @@
-function nimi() {
+
+function nimi() { //Nimien kanssa saattaa olla ongelma koska html pitää sisällään saman nimiset id:t, muuten teoriassa toimii :)
 
 let nimi = document.getElementById('nimi').value;
 
@@ -15,7 +16,7 @@ let email = document.getElementById('email').value;
 
 function emailIsValid (email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
-  if(emailIsValid(sahkoposti)) {
+  if(emailIsValid(sahkoposti)) {    //kutsuu muuttuja nimellä sahkoposti mutta sellaista ei ole.
     // else?
     alert("Anna oikea sähköpostiosoitteesi");
   return (false);
@@ -23,16 +24,22 @@ function emailIsValid (email) {
 }
 
 
-function ika() {
+function ikaF() {
 
 let ika = document.getElementById('ika').value;
 
-if(ika == string)
+if(ika == string)   //testaa onko muuttujat ika ja string samanlaiset ei siis testaa mitä tyyppiä pitää sisällään.
 {
 alert("Syötä numero");
 return false;
 }
 }
+
+
+
+
+
+
 
 
 // En ole vielä tarkistanut toimiiko nämä kuten suunnittelin,
@@ -52,7 +59,7 @@ function droppi() {
 
 
 
-  
+
 function radiot() {
   //seuraava ottaa kaikki ne radio nappulat tarkasteluun luokka on
   let satunnainenMuuttujaNimi = document.getElementsByClassName("pallot");
