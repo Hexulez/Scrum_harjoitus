@@ -16,3 +16,7 @@ html {
 p {
   text-align: justify;
 }
+
+#nimi, #email, #ika {
+  margin-left: 5%
+}
