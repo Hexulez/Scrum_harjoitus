@@ -53,19 +53,26 @@ function droppi() {
   }
 
 
-  // Nämä eivät vielä ole valmiita eikä toimi
+
+
+  
 function radiot() {
-  //seuraava ottaa kaikki ne radio nappulat tarkasteluun missä name arvo on mielipide
-  let satunnainenMuuttujaNimi = getElementsByTagName("mielipide")
+  //seuraava ottaa kaikki ne radio nappulat tarkasteluun luokka on
+  let satunnainenMuuttujaNimi = document.getElementsByClassName("pallot");
   // Ei ole suositeltavaa kierrättää samaa muuttuja nimeä,
   //mutta se on mahdollista.
   //Tosin siten saattaa helposti tehdä virheitä joita on todella vaikea löytää.
   for (let i = 0; i < satunnainenMuuttujaNimi.length; i++) {
-    if
-  }
+    //tehdään silmukka käyttämällä for mihin ensin määrittelen muuttujan i
+    // toisena kerron että silmukka toimii niin kauan kun i:n arvo on pienempi kuin muuttujan pituus.
+    //viimeisessä kerron että joka kierroksen jälkeen i:n arvo kasvaa yhdellä.
 
+    if (satunnainenMuuttujaNimi[i].checked){ //tarkistaa onko "radio nappula" valittu
+      return true;
+    }
   }
 }
+
 
 
 
@@ -75,7 +82,8 @@ function radiot() {
 
   function nappula1() {
     let drop = droppi() // tekee mutttujan drop ja ottaa joko false tai true arvon functiolta droppi.
-    if (drop === true ) {
+    let radios = radiot()
+    if (drop === true && radios === true ) { //tarkistaa molemmat muuttujat on saanut arvon true.
       alert("Kaikki on oikein");
     }
     else { // Tulee taas tänne jollei if lauseke täyty.

@@ -40,6 +40,8 @@
               <label for="pudotus">Kuinka hyvä olet Ohjelmoimaan?</label>
               <select class="textbox" id="pudotus">
                 <option value=""selected disabled hidden>Kuinka hyvä olet?</option>
+                <!-- Ensimmäinen valinta on lukittu että latautuu heti alussa,
+                mutta sen arvo on tyhjää eli value="" mikä tarkastetaan funktiossa droppi()-->
                 <option value="huono">Huono</option>
                 <option value="kohtalainen">Kohtalainen</option>
                 <option value="hyva">Hyvä</option>
@@ -48,11 +50,11 @@
               </select>
               <br><br>
               <label for="">Suosikki osuus projektissa?</label>
-              <input type="radio" id="html" name="mielipide" value="html">
+              <input type="radio" class="pallot" id="html" name="mielipide" value="html">
               <label for="html">HTML</label>
-              <input type="radio" id="css" name="mielipide" value="css">
-              <label for="">CSS</label>
-              <input type="radio" id="javascript" name="mielipide" value="javascript">
+              <input type="radio" class="pallot" id="css" name="mielipide" value="css">
+              <label for="css">CSS</label>
+              <input type="radio" class="pallot" id="javascript" name="mielipide" value="javascript">
               <label for="javascript">Javascript</label>
               <br><br>
 
@@ -69,7 +71,11 @@
               <label for="palaute"></label>
               <textarea id="palaute"  rows="8" cols="70"></textarea>
               <br><br>
+              <!--tein väliaikaisen nappulan testaukseen jotta nään consolista logit-->
+              <button type="button" onclick="nappula1()" name="button">testi nappula</button>
+
               <input type="submit" id="laheta" onclick="nappula1()" value="Lähetä">
+
           </form>
 
         </main>
