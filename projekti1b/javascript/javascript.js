@@ -1,6 +1,6 @@
-function Tulosta() {    // ei mitään hajua onko oikein, enkä muista kuinka tarkistetaan, selvittelen... //
+function Tulosta() {
 
-var nimi = kyselylomake.nimi.value;
+var nimi = document.getElementById('nimi').value;
 
 if(nimi.length < 2)
 {
