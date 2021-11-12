@@ -1,4 +1,4 @@
-function Tarkasta() {
+function nimi() {
 
 var nimi = document.getElementById('nimi').value;
 
@@ -10,7 +10,7 @@ return false;
 }
 }
 
-function Tarkasta() {
+function email() {
 
 var email = document.getElementById('email').value;
 
@@ -25,7 +25,7 @@ function emailIsValid (email) {
 }
 
 
-function Tarkasta() {
+function ika() {
 
 var ika = document.getElementById('ika').value;
 
