@@ -1,4 +1,4 @@
-function nimi() {
+function Tarkasta() {
 
 var nimi = document.getElementById('nimi').value;
 
@@ -10,7 +10,7 @@ return false;
 }
 }
 
-function email() {
+function Tarkasta() {
 
 var email = document.getElementById('email').value;
 
@@ -25,7 +25,7 @@ function emailIsValid (email) {
 }
 
 
-function ika() {
+function Tarkasta() {
 
 var ika = document.getElementById('ika').value;
 
@@ -51,16 +51,34 @@ function droppi() {
     return true; // palauttaa arvon totta eli true.
   }
   }
+
+
+  // Nämä eivät vielä ole valmiita eikä toimi
 function radiot() {
-  let satunnainenMuuttujaNimi = document.getElementById("")
+  //seuraava ottaa kaikki ne radio nappulat tarkasteluun missä name arvo on mielipide
+  let satunnainenMuuttujaNimi = getElementsByTagName("mielipide")
+  // Ei ole suositeltavaa kierrättää samaa muuttuja nimeä,
+  //mutta se on mahdollista.
+  //Tosin siten saattaa helposti tehdä virheitä joita on todella vaikea löytää.
+  for (let i = 0; i < satunnainenMuuttujaNimi.length; i++) {
+    if
+  }
+
+  }
 }
 
 
 
+// koska käytämme document.getElementById niin tein nappulan
+//johon voi liittää nuo muut funktiot
+//ja tehdä sitä kautta kaikkiin kerralla tarkistuksen.
 
   function nappula1() {
     let drop = droppi() // tekee mutttujan drop ja ottaa joko false tai true arvon functiolta droppi.
-    if (drop === true) {
-      alert("Kaikki on oikein")
+    if (drop === true ) {
+      alert("Kaikki on oikein");
+    }
+    else { // Tulee taas tänne jollei if lauseke täyty.
+      alert("jokin on pielessä");
     }
   }
