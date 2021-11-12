@@ -29,9 +29,9 @@ function Tarkasta() {
 
 var ika = document.getElementById('ika').value;
 
-if(ika.length < 2)
+if(ika == string)
 {
-alert("Et antanut nimeäsi");
+alert("Syötä numero");
 form.ika.focus();
 return false;
 }
