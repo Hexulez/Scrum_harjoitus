@@ -1,23 +1,17 @@
-
-function nimi() { //Nimien kanssa saattaa olla ongelma koska html pitää sisällään saman nimiset id:t, muuten teoriassa toimii :)
-
-let nimi = document.getElementById('nimi').value;
-
-if(nimi.length < 2)
-{
-alert("Et antanut nimeäsi");
-return false;
-}
+function validateForm() {
+  let x = document.getElementById("nimi").value;
+  if (x == "") {
+    alert("Nimi puuttuu");
+    return false;
+  }
 }
 
 function email() {
-
 let email = document.getElementById('email').value;
 
 function emailIsValid (email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
-  if(emailIsValid(sahkoposti)) {    //kutsuu muuttuja nimellä sahkoposti mutta sellaista ei ole.
-    // else?
+  if(emailIsValid(email)) {    //kutsuu muuttuja nimellä sahkoposti mutta sellaista ei ole.
     alert("Anna oikea sähköpostiosoitteesi");
   return (false);
 }
@@ -87,7 +81,7 @@ function radiot() {
   function nappula1() {
     let drop = droppi() // tekee mutttujan drop ja ottaa joko false tai true arvon functiolta droppi.
     let radios = radiot()
-    if (drop === true && radios === true ) { //tarkistaa molemmat muuttujat on saanut arvon true.
+    if (drop === true && radios === true) { //tarkistaa molemmat muuttujat on saanut arvon true.
       alert("Kaikki on oikein");
     }
     else { // Tulee taas tänne jollei if lauseke täyty.

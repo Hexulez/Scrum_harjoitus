@@ -24,10 +24,10 @@
 
       <main>
 
-          <form id="kyselylomake" name="kyselylomake" action="index.html" method="post">
+        <form id="myForm" name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
 
               <label id="nimisyotto" for="nimi">Nimi:</label>
-              <input id ="nimi" type="text" name="nimi" value="" placeholder="Matti Meikäläinen" onkeyup="nimi()"><br><br>
+              <input id ="nimi" type="text" name="nimi" value="" placeholder="Matti Meikäläinen"><br><br>
 
               <label id="emailsyotto" for="email">email:</label>
               <input id="email" type="text" name="email" value="" placeholder="matti.meikalainen@gmail.com" onkeyup="email()"><br><br>
@@ -74,6 +74,8 @@
               <button type="button" onclick="nappula1()" name="button">testi nappula</button>
 
               <input type="submit" id="laheta" onclick="nappula1()" value="Lähetä">
+
+
 
           </form>
 
