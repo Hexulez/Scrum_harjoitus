@@ -24,7 +24,7 @@ function emailIsValid (email) {
 }
 
 
-function ikaF() {
+function ika() {
 
 let ika = document.getElementById('ika').value;
 
