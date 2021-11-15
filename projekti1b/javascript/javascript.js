@@ -1,39 +1,19 @@
 function validateForm() {
-  let x = document.getElementById("nimi").value;
-  if (x == "") {
-    alert("Nimi puuttuu");
-    return false;
-  }
-}
-
-function email() {
-let email = document.getElementById('email').value;
-
-function emailIsValid (email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
-  if(emailIsValid(email)) {    //kutsuu muuttuja nimellä sahkoposti mutta sellaista ei ole.
-    alert("Anna oikea sähköpostiosoitteesi");
-  return (false);
-}
-}
-
-
-function ika() {
-
+let nimi = document.getElementById("nimi").value;
 let ika = document.getElementById('ika').value;
 
-if(ika == string)   //testaa onko muuttujat ika ja string samanlaiset ei siis testaa mitä tyyppiä pitää sisällään.
-{
-alert("Syötä numero");
-return false;
+if (nimi.length<2) {
+  alert("Nimi puuttuu");
+  return false;
+}
+else if (email) {
+
+}
+else if(isNaN(ika) || ika=="") {
+  alert("Syötä numero");
+  return false;
 }
 }
-
-
-
-
-
-
 
 
 // En ole vielä tarkistanut toimiiko nämä kuten suunnittelin,
