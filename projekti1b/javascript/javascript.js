@@ -6,9 +6,6 @@ if (nimi.length<2) {
   alert("Nimi puuttuu");
   return false;
 }
-else if (email) {
-
-}
 else if(isNaN(ika) || ika=="") {
   alert("Syötä numero");
   return false;
