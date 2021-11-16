@@ -1,16 +1,36 @@
-function validateForm() {
+function nimet() {
 let nimi = document.getElementById("nimi").value;
-let ika = document.getElementById('ika').value;
-
 if (nimi.length<2) {
   alert("Nimi puuttuu");
   return false;
 }
-else if(isNaN(ika) || ika=="") {
-  alert("Syötä numero");
+  else { //jos edellinen if lauseke täyty tulee toteuttaa tämän.
+    return true; // palauttaa arvon totta eli true.
+    }
+}
+
+function emailit() {
+let email = document.getElementById("email").value;
+  if (email === "") {
+  alert("Sähköpostiosoite on virheellinen");
   return false;
+  }
+  else { //jos edellinen if lauseke täyty tulee toteuttaa tämän.
+    return true; // palauttaa arvon totta eli true.
+  }
 }
+
+function iat() {
+let ika = document.getElementById("ika").value;
+  if(isNaN(ika) || ika=="") {
+    alert("Syötä numero");
+    return false;
+    }
+    else { //jos edellinen if lauseke täyty tulee toteuttaa tämän.
+      return true; // palauttaa arvon totta eli true.
+    }
 }
+
 
 
 // En ole vielä tarkistanut toimiiko nämä kuten suunnittelin,
@@ -56,9 +76,12 @@ function radiot() {
 //ja tehdä sitä kautta kaikkiin kerralla tarkistuksen.
 
   function nappula1() {
+    let nim = nimet()
+    let sahkoposti = emailit()
+    let ikaNum = iat()
     let drop = droppi() // tekee mutttujan drop ja ottaa joko false tai true arvon functiolta droppi.
     let radios = radiot()
-    if (drop === true && radios === true) { //tarkistaa molemmat muuttujat on saanut arvon true.
+    if (drop === true && radios === true && nim === true && sahkoposti === true && ikaNum === true) { //tarkistaa molemmat muuttujat on saanut arvon true.
       alert("Kaikki on oikein");
     }
     else { // Tulee taas tänne jollei if lauseke täyty.
