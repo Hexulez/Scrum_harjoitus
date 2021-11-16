@@ -12,9 +12,30 @@ else if(isNaN(ika) || ika=="") {
 }
 }
 
+//-------------------------------------------------------------------------
 
-// En ole vielä tarkistanut toimiiko nämä kuten suunnittelin,
-//mutta ovat kuitenkin varmaan aika lähelle oikeaa
+/*Avaan vähän tähän tätä kuinka sähköposti juttu toimii....
+function emailIsValid (email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
+
+on käytännössä*/
+
+function emailIsValid(email) { //kuten yleensäkin aloitetaan funktio
+return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)  //on siis Regular expressions
+}
+//Regular expressions on siis tapa etsiä merkkejä merkkijonoista (string)
+//palauttaa arvon true tai false
+
+//Pääset siis tekemään toimivan email varmistuksen kutsumalla tuon opettajan tekemän funktion
+//Ja sitten kun se antaa joko true tai false arvoin niin kaveriksi koodia joka päättää mitä sillä tiedolla tekee.
+
+
+
+//Opettajan kirjoittama koodin rivi  ei käytännössä toimi suoraan koska loppuosa siitä muuttuu automaattisesti kommentiksi.
+/*
+if(emailIsValid(sahkoposti)) { // } else{ alert("Anna oikea sÃ¤hkÃ¶postiosoitteesi"); lomake.email.focus(); return (false); }
+*/
+//eli se tarvii joko muokata tai kirjoittaa kokonaan uutta koodia.
+//---------------------------------------------------------------------
 function droppi() {
   let satunnainenMuuttujaNimi = document.getElementById("pudotus").value;
   //let muuttujalla mun muuttuja ei toimi tämän funktion ulkopuolella
