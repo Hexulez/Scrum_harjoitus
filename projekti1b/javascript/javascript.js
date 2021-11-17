@@ -23,7 +23,7 @@ if(emailIsValid(email)) {
 function iat() {
 let ika = document.getElementById("ika").value;
   if(isNaN(ika) || ika=="") {
-    alert("Syötä numero");
+    alert("Syötä ikä numeroina");
     return false;
     }
   else if (ika < 0 || ika > 130) {
