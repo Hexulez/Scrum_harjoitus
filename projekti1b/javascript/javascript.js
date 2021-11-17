@@ -10,15 +10,15 @@ if (nimi.length<2) {
 }
 
 function emailit() {
-let email = document.getElementById("email").value;
-  if (email === "") {
-  alert("Sähköpostiosoite on virheellinen");
-  return false;
+  let email = document.getElementById("email").value;
+  function emailIsValid (email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
+if(emailIsValid(email)) {
+  alert("Anna oikea sähköpostiosoitteesi");
+  lomake.email.focus();
+  return (false); }
   }
-  else { //jos edellinen if lauseke täyty tulee toteuttaa tämän.
-    return true; // palauttaa arvon totta eli true.
-  }
-}
+
 
 function iat() {
 let ika = document.getElementById("ika").value;
@@ -26,8 +26,12 @@ let ika = document.getElementById("ika").value;
     alert("Syötä numero");
     return false;
     }
-    else { //jos edellinen if lauseke täyty tulee toteuttaa tämän.
-      return true; // palauttaa arvon totta eli true.
+  else if (ika < 0 || ika > 130) {
+    alert("Anna numero väliltä 1-130")
+    return false;
+    }
+  else { //jos edellinen if lauseke täyty tulee toteuttaa tämän.
+    return true; // palauttaa arvon totta eli true.
     }
 }
 
