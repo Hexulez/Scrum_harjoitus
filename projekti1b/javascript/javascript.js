@@ -14,9 +14,13 @@ function emailit() {
   function emailIsValid (email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) }
 if(emailIsValid(email)) {
-  alert("Anna oikea sähköpostiosoitteesi");
-  lomake.email.focus();
-  return (false); }
+  return true
+}
+  else {
+    alert("Anna oikea sähköpostiosoitteesi");
+    lomake.email.focus();
+    return (false);
+  }
   }
 
 
