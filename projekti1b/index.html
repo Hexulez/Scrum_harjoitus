@@ -24,16 +24,16 @@
 
       <main>
 
-        <form id="myForm" name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+        <form id="myForm" name="myForm" action="index.html" onsubmit="return validateForm(this)" method="post">
 
               <label id="nimisyotto" for="nimi">Nimi:</label>
-              <input id ="nimi" type="text" name="nimi" value="" placeholder="Matti Meikäläinen"><br><br>
+              <input id ="nimi" type="text" name="nimi" placeholder="Matti Meikäläinen"><br><br>
 
               <label id="emailsyotto" for="email">email:</label>
-              <input id="email" type="text" name="email" value="" placeholder="matti.meikalainen@gmail.com" onkeyup="email()"><br><br>
+              <input id="email" type="text" name="email" placeholder="matti.meikalainen@gmail.com"><br><br>
 
               <label id="ikasyotot" for="ika">Ikä:</label>
-              <input id="ika" type="text" name="ika" value="" placeholder="30" onkeyup="ika()"><br><br>
+              <input id="ika" type="text" name="ika" placeholder="30"><br><br>
 
           <!-- Henkka säätää taas omiaan =) -->
               <label for="pudotus">Kuinka hyvä olet Ohjelmoimaan?</label>
@@ -49,11 +49,11 @@
               </select>
               <br><br>
               <label for="">Suosikki osuus projektissa?</label>
-              <input type="radio" class="pallot" id="html" name="mielipide" value="html">
+              <input type="radio" class="pallot" name="pallot" id="html" name="mielipide" value="html">
               <label for="html">HTML</label>
-              <input type="radio" class="pallot" id="css" name="mielipide" value="css">
+              <input type="radio" class="pallot" name="pallot" id="css" name="mielipide" value="css">
               <label for="css">CSS</label>
-              <input type="radio" class="pallot" id="javascript" name="mielipide" value="javascript">
+              <input type="radio" class="pallot" name="pallot" id="javascript" name="mielipide" value="javascript">
               <label for="javascript">Javascript</label>
               <br><br>
 
