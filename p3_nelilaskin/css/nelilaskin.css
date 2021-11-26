@@ -1,0 +1,29 @@
+table {
+  width: 20%;
+  height: 300px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+  padding: 60px;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+  cursor: pointer;
+}
