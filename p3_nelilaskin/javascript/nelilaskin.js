@@ -1,0 +1,5 @@
+const numberButtons = document.getElementById('[data-number]')
+const operationButtons = document.getElementById('[data-operation]')
+const operationEgulas = document.getElementById('[data-equals]')
+const operationDelete = document.getElementById('[data-delete]')
+const operationClear = document.getElementById('[data-clearAll]')
