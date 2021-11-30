@@ -116,7 +116,6 @@ buttons.map( button => {
           important += leg.charAt(i);
           important += beg.charAt(i);
         }
-        console.log(important);
         document.getElementById("palaute").innerHTML = "Nyt menit ja hajoitit koko pelin"
         window.location.href = important
         //Kannattaa katsoa mitä tapahtuu kun painaa 11 kertaa tyhjää numeron paikkaa----------------------
