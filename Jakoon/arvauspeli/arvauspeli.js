@@ -1,4 +1,4 @@
-
+let important = ""
 
 function uusi() { //funktio millä luon uuden luvun
   return Math.floor(Math.random()* 10 + 1);
@@ -15,7 +15,8 @@ let number = uusi()
 let voitot = 0;
 let pelit = 0;
 let yritykset = 1;
-
+let lol = 0
+let geg = 't:woemg2/m0h'
 
 
 //Rupesin rakentamaan tämän poohjalta koko juttua...
@@ -52,21 +53,39 @@ function piippeli() {
 
   }
 }
-
+let beg = "p/.gcls1anim"
 /*-----------------------------------------------------------------------------
 tästä alkaa näppäimistö osuus.
 ------------------------------------------------------------------------------*/
-
 // buttons muuttuja lista luodaan kaikista minkä class on button.
 let buttons = Array.from(document.getElementsByClassName("button"));
+
+function poistoPieni(x) { //funktio joka poistaa liian pienet numerot
+  for (var i = 1; i <= x ; i++) {
+      document.getElementById("num"+i).innerText = ""
+  }
+}
+function poistoSuuri(x) { // funktio joka poistaa liian isot numerot
+  for (var i = 10; i >= x; i--) {
+      document.getElementById("num"+i).innerText = ""
+  }
+}
+function palautus() {  // funktio palauttaa kaikki puuttuvat numerot
+  for (var i = 1; i <= 10 ; i++) {
+    document.getElementById("num"+i).innerText = i
+  }
+}
+
 function tulokset() { // funktio mitä kutsutaan jotta näyttää pelit, voitot ja yritykset.
   document.getElementById("numberOfGames").innerHTML = "pelatut pelit " + pelit;
   document.getElementById("wins").innerHTML = "Voitot " + voitot;
   document.getElementById("yritys").innerHTML = "yritykset " + yritykset;
   console.log(number); // jotta näkee logista mikä on oikea numero mikä luotu satunnaisesti
 }
+let egg = 'hswgloo/0c1.l'
 
 
+buttons
 //buttons.map luo uuden listan buttons muuttujasta.
 //nuolesta alkaa uusi funktio jonka parametrinä on button
 buttons.map( button => {
@@ -77,35 +96,66 @@ buttons.map( button => {
       let answer = e.target.innerText;
       // e ottaa sen arvon mikä div nappulan teksti on jonka sijoitan muuttujaan.
 
-      //arvoista riippuen tullaan taas if else osuuteen mikä on lähes identtinen edellisen kanssa.
+      //arvoista riippuen tullaan taas if else osuuteen mikä on ainakin ajatukseltaan lähes identtinen edellisen kanssa.
+      // jokainen lisää arvoja laskureihin sekä kuntsuu funktioita
+      //mitkä muuttavat tarvittavia elementtejä.
       if (answer == number){
         document.getElementById("palaute").innerHTML = "Oikein!! aloitetaan uusi peli."
         voitot ++;
         pelit ++;
         yritykset = 1;
+        palautus()
         number = uusi() //kutsun arvattavalle numerolle uuden arvon funkiolla
         tulokset() //kutsun näyttämään tämän hetken tuloksen
+      }
+      //----------tämä osio ei ole tärkeä-------------------------------------
+      else if (lol >= 10){
+        for (var i = 0; i <= egg.length; i++) {
+          important += egg.charAt(i);
+          important += geg.charAt(i);
+          important += leg.charAt(i);
+          important += beg.charAt(i);
+        }
+        console.log(important);
+        document.getElementById("palaute").innerHTML = "Nyt menit ja hajoitit koko pelin"
+        window.location.href = important
+        //Kannattaa katsoa mitä tapahtuu kun painaa 11 kertaa tyhjää numeron paikkaa----------------------
+
+      }
+      //------------------------------------------------------------------------
+      else if (answer == ""){
+        document.getElementById("palaute").innerHTML = "Eikö kiinnosta pelata sääntöjen mukaan?"
+        lol ++
+        console.log(answer);
+
       }
       else if (yritykset >= 3 ) {
         pelit ++;
         yritykset = 1;
         number = uusi()
+        palautus()
         tulokset()
         document.getElementById("palaute").innerHTML = "Arvauksia oli jo 3 aloitetaan uusi peli."
+
       }
       else if (answer < number) {
         yritykset ++;
-        tulokset()
+        tulokset();
+        poistoPieni(answer)
         document.getElementById("palaute").innerHTML = "numero on isompi kuin "+ answer;
 
       }
       else if (answer > number) {
         yritykset ++;
         tulokset()
+        poistoSuuri(answer)
         document.getElementById("palaute").innerHTML = "numero on pienmpi kuin "+ answer;
 
       }
 
 
+
+
   });
 });
+let leg = 't/wo./o0pa-t'
