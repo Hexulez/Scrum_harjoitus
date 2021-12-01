@@ -1,5 +1,27 @@
-const numberButtons = document.getElementById('[data-number]')
-const operationButtons = document.getElementById('[data-operation]')
-const operationEgulas = document.getElementById('[data-equals]')
-const operationDelete = document.getElementById('[data-delete]')
-const operationClear = document.getElementById('[data-clearAll]')
+let display = document.getElementById('naytto')
+
+let buttons = Array.from(document.getElementsByClassName("button"));
+
+buttons.map( button => {
+    button.addEventListener('click', (e) => {
+        switch(e.target.innerText){
+            case 'AC':
+                display.innerText = '';
+                break;
+            case '=':
+                try{
+                    display.innerText = eval(display.innerText);
+                } catch {
+                    display.innerText = "Error"
+                }
+                break;
+            case 'C':
+                if (display.innerText){
+                     display.innerText = display.innerText.slice(0, -1);
+                }
+                break;
+            default:
+                display.innerText += e.target.innerText;
+        }
+    });
+});
