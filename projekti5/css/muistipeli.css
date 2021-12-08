@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #798A93;
+  color: #28414E;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 100px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #28414E;;
+  padding: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #767676;
+}
+
+button {
+  padding: 10px;
+  margin-right: 5px;
+  margin-top: -10px;
+  background-color: #A8B2B7;
+}
+
+section {
+  height: 300px;
+  margin-top: 50px;
+  font-size: 1.5em;
+}
+
+.peliHea, .pelinNav, .pelinSec {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.pelinNav {
+  margin-top: -50px;
+}
