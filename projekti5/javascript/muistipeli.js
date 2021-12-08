@@ -24,4 +24,8 @@ function pelilauta(cards) {
     //testi.classList.add("peli")
 
   }
-}
+
+//  for (let j = 0; j < cards; j--) {
+  //  const divi = document.deleteElement('div');
+
+  }
