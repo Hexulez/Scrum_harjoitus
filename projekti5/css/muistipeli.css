@@ -1,0 +1,53 @@
+body {
+  background-color: #4989AB;
+  color: #A5CEE4;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  color: #334148;
+}
+
+button:hover {
+  background-color: #767676;
+}
+
+button {
+  padding: 10px;
+  margin-right: 5px;
+  margin-top: -10px;
+  background-color: #A5CEE4;
+}
+
+section {
+  height: 300px;
+  margin-top: 50px;
+  font-size: 1.5em;
+}
+
+.peliHea, .pelinNav, .pelinSec {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.pelinNav {
+  margin-top: -50px;
+}
+
+.pelialusta {
+  width: 65%;
+  height: 600px;
+  margin-left: 30%;
+  margin-top: -30%;
+}

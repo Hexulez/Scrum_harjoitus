@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="muistipeli.css">
-    <script src="muistipeli.js" charset="utf-8"></script>
-    <title>Muistipeli</title>
+    <link rel="stylesheet" href="css/muistipeli.css">
+    <script src="javascript/muistipeli.js" charset="utf-8"></script>
+    <title>Muisti | Muistipeli</title>
   </head>
 
     <body>
 
-      <head>
-        <h1>Tervetuloa!</h1>
-        <p>Valitse muistipeli, jonka haluat pelata</p>
-      </head>
+      <header class="peliHea"><h1>Muistipeli</h1></header>
 
-      <section>
+      <section class="pelinSec">
         <label for="valitse"></label>
         <select class="muistipeli" id="valitseKoko">
           <option value="selected disabled hidden">Valitse pelin koko</option>
@@ -27,6 +24,17 @@
           <button type="button" onclick="valitse" name="Pelaamaan"></button>
         </select>
       </section>
+
+
+      <nav class="pelinNav">
+        <button type="button" name="button" onclick="muistipeli"><a href="muistipeli.html">Aloita muistipeli</a></button>
+        <button type="button" name="button"><a href="index.html">Etusivu</a></button>
+      </nav>
+
+      <div class="pelialusta" id="pelialusta">
+
+      </div>
+
 
     </body>
 
