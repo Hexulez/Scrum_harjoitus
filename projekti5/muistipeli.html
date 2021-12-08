@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="muistipeli.css">
+    <script src="muistipeli.js" charset="utf-8"></script>
+    <title>Muistipeli</title>
+  </head>
+
+    <body>
+
+      <head>
+        <h1>Tervetuloa!</h1>
+        <p>Valitse muistipeli, jonka haluat pelata</p>
+      </head>
+
+      <section>
+        <label for="valitse"></label>
+        <select class="muistipeli" id="valitseKoko">
+          <option value="selected disabled hidden">Valitse pelin koko</option>
+          <option value="4x4">4x4</option>
+          <option value="4x6">4x6</option>
+          <option value="6x6">6x6</option>
+          <button type="button" onclick="valitse" name="Pelaamaan"></button>
+        </select>
+      </section>
+
+    </body>
+
+
+</html>
