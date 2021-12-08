@@ -8,9 +8,10 @@ function valitse() { //funktio jolla voi kutsua muut osat
 //Tästä olisi tarkoitus rakentaa funktio joka lisää ja poistaa div elementejä
 //sen mukaan kuinka paljon haluaa käyttää kortteja
 function pelilauta(cards) {
-
+  var elem = document.getElementsByClassName("peli");
+  elem.parentNode.removeChild(elem);
   //tähän pitäisi lisätä osio mikä tarkistaa onko niitä vielä ja poistaa vanhat
-
+  
   for (let i = 0; i < cards; i++) { //tämä osio lisää niitä
     const divine = document.createElement('div');
     const teksti = document.createTextNode("testi teksti.");
