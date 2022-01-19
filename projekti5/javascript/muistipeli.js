@@ -2,7 +2,19 @@ function valitse() { //funktio jolla voi kutsua muut osat
   let cards = document.getElementById("valitseKoko").value;
   console.log(cards);
   pelilauta(parseInt(cards));
+  boardSize(cards)
 }
+
+
+//boardSize on funktio joka muuttaa laudan joko 6x6 tai 4x?
+const boardSize = (cards) =>{
+let div = document.querySelectorAll('.peli')
+cards == 36 ? div.forEach(element => element.style.width = "16%") :
+div.forEach(element => element.style.width = "22%");
+}
+
+
+
 
 //here we need array for all pictures (18 pcs)
 const allPictures =  [
@@ -10,7 +22,7 @@ const allPictures =  [
   "kuvat/janis.jpg", "kuvat/kauris.jpg", "kuvat/kettu.jpg",
   "kuvat/kili.jpg", "kuvat/kirahvi.jpg", "kuvat/kissa.jpg",
   "kuvat/koira.jpg", "kuvat/kultapanda.jpg", "kuvat/lammas.jpg",
-  "kuvat/leppakerttu.jpg", "kuvat/lintu", "kuvat/norsu.jpg",
+  "kuvat/leppakerttu.jpg", "kuvat/lintu.jpg", "kuvat/norsu.jpg",
   "kuvat/seepra.jpg", "kuvat/tiikeri.jpg", "kuvat/villisika.jpg"
 
 ]
@@ -21,7 +33,6 @@ const allPictures =  [
 // boardEraser I function what check is there any div class"peli" and delete those.
 const boardEraser = () =>{
   let div = document.querySelector('.peli');
-  console.log(div);
   if (div != null ) {
     console.log("porn");
     document.querySelectorAll('.peli').forEach(e => e.remove());
@@ -31,15 +42,14 @@ const boardEraser = () =>{
 // makeGameBoard is function and this make right number of cards what needed
 const makeGameBoard = (cards, orderArr) =>{
   for (let i = 0; i < cards; i++) { //tämä osio lisää niitä
-    console.log(i);
     const order = orderArr[i]
     const divine = document.createElement('div');
     //const teksti = document.createTextNode(allPictures[order]);
     const kuva = document.createElement("IMG");
     kuva.setAttribute("src", allPictures[order])
-    const element = document.getElementById("container");
+    const element = document.getElementById("pelilauta");
     divine.className ="peli"
-    console.log(i);
+    kuva.className ="kortti"
     //divine.appendChild(teksti);
     divine.appendChild(kuva);
     element.appendChild(divine);
@@ -61,7 +71,8 @@ const picToCard = (cards) => {
   for (let i = 0; i < cards/2; i++) {
 
     arr.push(i);
-    arr.push(i);
+
+
 
   }
   const suffle = (arr) =>{
@@ -81,6 +92,8 @@ const picToCard = (cards) => {
 //picToCard ends here
 
 
+// pelilauta funktio kutsuu muita funktioita rakentamaan pelilaudan
+
 function pelilauta(cards) {
   const orderofCards = picToCard(cards)
   console.log(orderofCards);
@@ -88,7 +101,7 @@ function pelilauta(cards) {
   //picToCard(cards)
   makeGameBoard(cards, orderofCards);
 
-  //  for (let j = 0; j < cards; j--) {
-    //  const divi = document.deleteElement('div');
 
   }
+
+//pelilauta loppuu tähän

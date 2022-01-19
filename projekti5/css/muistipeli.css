@@ -53,6 +53,10 @@ section {
 }
 
 .peli {
-  width: 10%;
-  float: left;
+  width: 22%;
+  display: inline-block;
+}
+
+.kortti {
+width: 100%;
 }
