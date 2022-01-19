@@ -6,10 +6,13 @@ function valitse() { //funktio jolla voi kutsua muut osat
 
 //here we need array for all pictures (18 pcs)
 const allPictures =  [
-  '1',  '2',  '3',  '4',
-  '5',  '6',  '7',  '8',
-  '9',  '10', '11', '12',
-  '13', '14', '15', '16'
+  "kuvat/aasi.jpg", "kuvat/apina.jpg", "kuvat/haukka.jpg",
+  "kuvat/janis.jpg", "kuvat/kauris.jpg", "kuvat/kettu.jpg",
+  "kuvat/kili.jpg", "kuvat/kirahvi.jpg", "kuvat/kissa.jpg",
+  "kuvat/koira.jpg", "kuvat/kultapanda.jpg", "kuvat/lammas.jpg",
+  "kuvat/leppakerttu.jpg", "kuvat/lintu", "kuvat/norsu.jpg",
+  "kuvat/seepra.jpg", "kuvat/tiikeri.jpg", "kuvat/villisika.jpg"
+
 ]
 
 
@@ -31,14 +34,14 @@ const makeGameBoard = (cards, orderArr) =>{
     console.log(i);
     const order = orderArr[i]
     const divine = document.createElement('div');
-    const teksti = document.createTextNode(allPictures[order]);
-    //const kuva = document.createElement("IMG");
-    //kuva.setAttribute("src", "kuvat/kuva2.jpg")
+    //const teksti = document.createTextNode(allPictures[order]);
+    const kuva = document.createElement("IMG");
+    kuva.setAttribute("src", allPictures[order])
     const element = document.getElementById("container");
     divine.className ="peli"
     console.log(i);
-    divine.appendChild(teksti);
-    //divine.appendChild(kuva);
+    //divine.appendChild(teksti);
+    divine.appendChild(kuva);
     element.appendChild(divine);
     let testi = document.getElementsByTagName("DIV").className;
     //testi.classList.add("peli")
