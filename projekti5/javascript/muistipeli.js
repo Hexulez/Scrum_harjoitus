@@ -6,10 +6,12 @@ function valitse() { //funktio jolla voi kutsua muut osat
 
 //here we need array for all pictures (18 pcs)
 const allPictures =  [
-   1,  2,  3,  4,  5,  6,
-   7,  8,  9, 10, 11, 12,
-  13, 14, 15, 16
+  '1',  '2',  '3',  '4',
+  '5',  '6',  '7',  '8',
+  '9',  '10', '11', '12',
+  '13', '14', '15', '16'
 ]
+
 
 
 
@@ -24,10 +26,12 @@ const boardEraser = () =>{
 // boardEraser end here
 
 // makeGameBoard is function and this make right number of cards what needed
-const makeGameBoard = (cards) =>{
+const makeGameBoard = (cards, orderArr) =>{
   for (let i = 0; i < cards; i++) { //tämä osio lisää niitä
+    console.log(i);
+    const order = orderArr[i]
     const divine = document.createElement('div');
-    const teksti = document.createTextNode(allPictures[picToCard(cards)[i]]);
+    const teksti = document.createTextNode(allPictures[order]);
     //const kuva = document.createElement("IMG");
     //kuva.setAttribute("src", "kuvat/kuva2.jpg")
     const element = document.getElementById("container");
@@ -43,15 +47,6 @@ const makeGameBoard = (cards) =>{
 //makeGameBoard end here
 
 
-function pelilauta(cards) {
-  boardEraser();
-  //picToCard(cards)
-  makeGameBoard(cards);
-
-//  for (let j = 0; j < cards; j--) {
-  //  const divi = document.deleteElement('div');
-
-  }
 
 
 
@@ -59,21 +54,35 @@ function pelilauta(cards) {
 
 const picToCard = (cards) => {
   let arr = [];
+  for (let y =0;y<2;y++)
   for (let i = 0; i < cards/2; i++) {
+
     arr.push(i);
     arr.push(i);
 
   }
   const suffle = (arr) =>{
-  for (var i = arr.length-1; i >0;i--);{
-        let j = Math.floor(Math.random() * (i +1));
-        let temp =arr[i]; //save last number of array
-        arr[i] = arr[j];  // change last number to random number
+    for (let x = arr.length-1; x >0;x--){
+        let j = Math.floor(Math.random() * (x +1));
+        let temp =arr[x]; //save last number of array
+        arr[x] = arr[j];  // change last number to random number
         arr[j] = temp;  // change that random numner place to last numner of starting array
   }
-  console.log(arr);
+
 
   }
-  return arr
+  return suffle(arr);
 }
 //picToCard ends here
+
+
+function pelilauta(cards) {
+  const orderofCards = picToCard(cards)
+  boardEraser();
+  //picToCard(cards)
+  makeGameBoard(cards, orderofCards);
+
+  //  for (let j = 0; j < cards; j--) {
+    //  const divi = document.deleteElement('div');
+
+  }
