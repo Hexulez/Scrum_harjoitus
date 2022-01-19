@@ -7,6 +7,8 @@ function valitse() { //funktio jolla voi kutsua muut osat
 
 
 
+
+
 //boardSize on funktio joka muuttaa laudan joko 6x6 tai 4x?
 
 const boardSize = (cards) =>{
@@ -48,10 +50,14 @@ const makeGameBoard = (cards, orderArr) =>{
     const divine = document.createElement('div');
     //const teksti = document.createTextNode(allPictures[order]);
     const kuva = document.createElement("IMG");
-    kuva.setAttribute("src", allPictures[order])
+    kuva.setAttribute("src", allPictures[order]);
+    kuva.setAttribute("id", "kuva"+i);
+    kuva.setAttribute("name", order)
+    kuva.onclick = function() {cardcheck(this.id)};
     const element = document.getElementById("pelilauta");
     divine.className ="peli"
     kuva.className ="kortti"
+
     //divine.appendChild(teksti);
     divine.appendChild(kuva);
     element.appendChild(divine);
@@ -107,3 +113,45 @@ function pelilauta(cards) {
   }
 
 //pelilauta loppuu tähän
+
+//"gameEngine"
+
+
+let engine = 2
+let cardID = []
+function cardcheck(kuvaID) {
+  engine--;
+  cardID.push(kuvaID);
+  console.log(document.getElementById(kuvaID).name);
+  if (engine == 0){
+    console.log("tulostaa");
+    engine = 2;
+    if (cardID[0] === cardID[1]){
+      cardID = [];
+    }
+    else if (document.getElementById(cardID[0]).name == document.getElementById(cardID[1]).name){
+    //tämä pitää keksiä millä näitä vertailee onko samat
+      cardID.forEach(x => { document.getElementById(x).hidden = true;
+      });
+      cardID = [];
+    }
+    else{
+      cardID = [];
+    }
+  }
+}
+
+
+
+//gameEngine ends here
+
+
+
+let showPic = (picNum) => {
+  console.log("picnum"+picNum);
+  document.getElementById(picNum).hidden = true;
+}
+
+
+
+//test section ---------------
