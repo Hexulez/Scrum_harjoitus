@@ -114,10 +114,24 @@ function pelilauta(cards) {
 
 //pelilauta loppuu tähän
 
+//Promise
+//En saanut ajastusta muuten toimimaan helposti niin käytin promise funktiota
+function resolveLater(x) {
+ return new Promise(resolve => {
+   setTimeout(() => {
+     resolve(x);
+   }, 500);
+ });
+}
+//promise ends
+
+
 //piilota funktio piilottaa kuvat uudestaan
-let piilota = () =>{
+async function piilota(cardID) {
+  let x = await resolveLater(10)
   document.getElementById(cardID[0]).style.opacity = "0";
   document.getElementById(cardID[1]).style.opacity = "0";
+  console.log(x);
 }
 //piilota loppuu tähän
 
@@ -132,11 +146,11 @@ function cardcheck(kuvaID) {
   cardID.push(kuvaID);
   console.log(document.getElementById(kuvaID).name);
   if (engine == 0){
-    
+
     console.log("tulostaa");
     engine = 2;
     if (cardID[0] === cardID[1]){
-      piilota()
+      piilota(cardID)
       cardID = [];
     }
     else if (document.getElementById(cardID[0]).name == document.getElementById(cardID[1]).name){
@@ -146,7 +160,7 @@ function cardcheck(kuvaID) {
       cardID = [];
     }
     else{
-      piilota()
+      piilota(cardID)
       cardID = [];
     }
   }
