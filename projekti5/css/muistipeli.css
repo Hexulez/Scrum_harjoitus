@@ -56,8 +56,11 @@ section {
   width: 22%;
   display: inline-block;
   background-color: black;
+  border: 2px solid red;;
 }
 
 .kortti {
 width: 100%;
+opacity: 0;
+
 }

@@ -114,6 +114,13 @@ function pelilauta(cards) {
 
 //pelilauta loppuu tähän
 
+//piilota funktio piilottaa kuvat uudestaan
+let piilota = () =>{
+  document.getElementById(cardID[0]).style.opacity = "0";
+  document.getElementById(cardID[1]).style.opacity = "0";
+}
+//piilota loppuu tähän
+
 //"gameEngine"
 
 
@@ -121,12 +128,15 @@ let engine = 2
 let cardID = []
 function cardcheck(kuvaID) {
   engine--;
+  document.getElementById(kuvaID).style.opacity = "1";
   cardID.push(kuvaID);
   console.log(document.getElementById(kuvaID).name);
   if (engine == 0){
+    
     console.log("tulostaa");
     engine = 2;
     if (cardID[0] === cardID[1]){
+      piilota()
       cardID = [];
     }
     else if (document.getElementById(cardID[0]).name == document.getElementById(cardID[1]).name){
@@ -136,6 +146,7 @@ function cardcheck(kuvaID) {
       cardID = [];
     }
     else{
+      piilota()
       cardID = [];
     }
   }
