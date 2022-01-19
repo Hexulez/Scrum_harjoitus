@@ -68,9 +68,11 @@ const picToCard = (cards) => {
         arr[x] = arr[j];  // change last number to random number
         arr[j] = temp;  // change that random numner place to last numner of starting array
   }
-
+  return arr;
 
   }
+  console.log("testi");
+  console.log(suffle(arr));
   return suffle(arr);
 }
 //picToCard ends here
@@ -78,6 +80,7 @@ const picToCard = (cards) => {
 
 function pelilauta(cards) {
   const orderofCards = picToCard(cards)
+  console.log(orderofCards);
   boardEraser();
   //picToCard(cards)
   makeGameBoard(cards, orderofCards);
