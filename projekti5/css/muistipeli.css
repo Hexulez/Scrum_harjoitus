@@ -55,6 +55,7 @@ section {
 .peli {
   width: 22%;
   display: inline-block;
+  background-color: black;
 }
 
 .kortti {

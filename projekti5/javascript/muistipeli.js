@@ -6,13 +6,15 @@ function valitse() { //funktio jolla voi kutsua muut osat
 }
 
 
-//boardSize on funktio joka muuttaa laudan joko 6x6 tai 4x?
-const boardSize = (cards) =>{
-let div = document.querySelectorAll('.peli')
-cards == 36 ? div.forEach(element => element.style.width = "16%") :
-div.forEach(element => element.style.width = "22%");
-}
 
+//boardSize on funktio joka muuttaa laudan joko 6x6 tai 4x?
+
+const boardSize = (cards) =>{
+  let div = document.querySelectorAll('.peli')
+  cards == 36 ? div.forEach(element => element.style.width = "16%") :
+  div.forEach(element => element.style.width = "22%");
+}
+//boardSize loppuu tähän
 
 
 
