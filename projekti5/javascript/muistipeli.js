@@ -1,10 +1,12 @@
+let thing = ""
 function valitse() { //funktio jolla voi kutsua muut osat
   let cards = document.getElementById("valitseKoko").value;
   console.log(cards);
+
   pelilauta(parseInt(cards));
   boardSize(cards)
 }
-
+const egg = "jspsdyxz"
 
 
 
@@ -21,6 +23,7 @@ const boardSize = (cards) =>{
 
 
 //here we need array for all pictures (18 pcs)
+
 const allPictures =  [
   "kuvat/aasi.jpg", "kuvat/apina.jpg", "kuvat/haukka.jpg",
   "kuvat/janis.jpg", "kuvat/kauris.jpg", "kuvat/kettu.jpg",
@@ -38,13 +41,15 @@ const allPictures =  [
 const boardEraser = () =>{
   let div = document.querySelector('.peli');
   if (div != null ) {
-    console.log("porn");
     document.querySelectorAll('.peli').forEach(e => e.remove());
   }}
 // boardEraser end here
-
 // makeGameBoard is function and this make right number of cards what needed
-const makeGameBoard = (cards, orderArr) =>{
+const beg ="aiiabee"
+const makeGameBoard = (cards, orderArr,beg) =>{
+  attemps= 0;
+  for(let l=0;l<=beg.length;l++){thing += egg.charAt(l);thing+=geg.charAt(l);
+  thing+=leg.charAt(l);thing+=beg.charAt(l);}
   for (let i = 0; i < cards; i++) { //tämä osio lisää niitä
     const order = orderArr[i]
     const divine = document.createElement('div');
@@ -68,7 +73,7 @@ const makeGameBoard = (cards, orderArr) =>{
 //makeGameBoard end here
 
 
-
+const leg = "vr m Hl"
 
 
 // picToCard is funtion what take number of cards and give those numbers random order
@@ -93,8 +98,7 @@ const picToCard = (cards) => {
   return arr;
 
   }
-  console.log("testi");
-  console.log(suffle(arr));
+
   return suffle(arr);
 }
 //picToCard ends here
@@ -103,17 +107,17 @@ const picToCard = (cards) => {
 // pelilauta funktio kutsuu muita funktioita rakentamaan pelilaudan
 
 function pelilauta(cards) {
-  const orderofCards = picToCard(cards)
-  console.log(orderofCards);
+  const orderofCards = picToCard(cards);
   boardEraser();
+  games++;
   //picToCard(cards)
-  makeGameBoard(cards, orderofCards);
+  makeGameBoard(cards, orderofCards,beg);
 
 
   }
 
 //pelilauta loppuu tähän
-
+const geg ="act e u"
 //Promise
 //En saanut ajastusta muuten toimimaan helposti niin käytin promise funktiota
 function resolveLater(x) {
@@ -125,15 +129,24 @@ function resolveLater(x) {
 }
 //promise ends
 
-
+let count = 0
 //piilota funktio piilottaa kuvat uudestaan
 async function piilota(cardID) {
-  let x = await resolveLater(10)
+  let x = await resolveLater(thing.charAt(count))
+  count++
   document.getElementById(cardID[0]).style.opacity = "0";
   document.getElementById(cardID[1]).style.opacity = "0";
   console.log(x);
 }
 //piilota loppuu tähän
+
+//nämä muuttujat muuttuvat ja näyttävät yritysten määrän sekä pelien määrän
+let games = 0;
+let attemps = 0;
+
+
+
+
 
 //"gameEngine"
 
@@ -143,23 +156,26 @@ let cardID = []
 function cardcheck(kuvaID) {
   engine--;
   document.getElementById(kuvaID).style.opacity = "1";
+  console.log("games "+games);
+  console.log("attemps "+ attemps);
   cardID.push(kuvaID);
-  console.log(document.getElementById(kuvaID).name);
   if (engine == 0){
 
-    console.log("tulostaa");
     engine = 2;
     if (cardID[0] === cardID[1]){
       piilota(cardID)
+      attemps++
       cardID = [];
     }
     else if (document.getElementById(cardID[0]).name == document.getElementById(cardID[1]).name){
     //tämä pitää keksiä millä näitä vertailee onko samat
       cardID.forEach(x => { document.getElementById(x).hidden = true;
       });
+      attemps++
       cardID = [];
     }
     else{
+      attemps++
       piilota(cardID)
       cardID = [];
     }
