@@ -145,8 +145,10 @@ let games = 0;
 let attemps = 0;
 // eli jos haluaa että ne näkyy sivulle ne pitää vain asettaa sinne
 
-
-
+//ajastin... pitää asettaa jonnekin päin sivua.
+let seconds = 0;
+let timer = setInterval(()=>seconds++,1000);
+//ajastin loppuu
 
 //"gameEngine"
 
