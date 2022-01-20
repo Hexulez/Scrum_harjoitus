@@ -143,7 +143,7 @@ async function piilota(cardID) {
 //nämä muuttujat muuttuvat ja näyttävät yritysten määrän sekä pelien määrän
 let games = 0;
 let attemps = 0;
-
+// eli jos haluaa että ne näkyy sivulle ne pitää vain asettaa sinne
 
 
 
@@ -156,8 +156,8 @@ let cardID = []
 function cardcheck(kuvaID) {
   engine--;
   document.getElementById(kuvaID).style.opacity = "1";
-  console.log("games "+games);
-  console.log("attemps "+ attemps);
+  //console.log("games "+games);
+  //console.log("attemps "+ attemps);
   cardID.push(kuvaID);
   if (engine == 0){
 
