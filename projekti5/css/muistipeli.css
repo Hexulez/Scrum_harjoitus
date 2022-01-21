@@ -48,28 +48,11 @@ section {
 .pelialusta {
   width: 65%;
   height: 600px;
-  max-height: 100vh;
   margin-left: 30%;
   margin-top: -30%;
 }
 
-
 .peli {
-  width: 22%;
-  display: inline-block;
-  background-color: black;
-  border: 2px solid red;;
-}
-
-.kortti {
-width: 100%;
-opacity: 0;
-
-}
-
-#container {
-  width: 60%;
-  height: auto;
-  margin-left: 30%;
-  margin-top: -28%;
+  width: 10%;
+  float: left;
 }
