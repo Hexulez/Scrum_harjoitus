@@ -45,14 +45,16 @@ section {
   margin-top: -50px;
 }
 
-.pelialusta {
-  width: 65%;
-  height: 600px;
-  margin-left: 30%;
-  margin-top: -30%;
-}
+
 
 .peli {
   width: 10%;
   float: left;
+}
+
+#container {
+  width: 60%;
+  height: auto;
+  margin-left: 30%;
+  margin-top: -28%;
 }
