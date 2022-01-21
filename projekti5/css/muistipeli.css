@@ -9,7 +9,7 @@ header {
   height: 100px;
   text-align: center;
   font-size: 1.5em;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 nav a {
@@ -31,8 +31,8 @@ button {
 }
 
 section {
-  height: 300px;
-  margin-top: 50px;
+  height: 150px;
+  margin-top: 0px;
   font-size: 1.5em;
 }
 
@@ -41,18 +41,24 @@ section {
   margin-left: 20px;
 }
 
-.pelinNav {
-  margin-top: -50px;
-}
 
-.pelialusta {
+.pelilauta {
   width: 65%;
   height: 600px;
+  max-height: 100vh;
   margin-left: 30%;
-  margin-top: -30%;
+  margin-top: -20%;
 }
 
+
 .peli {
-  width: 10%;
-  float: left;
+  width: 22%;
+  display: inline-block;
+  background-color: black;
+  border: 2px solid red;;
+}
+
+.kortti {
+width: 100%;
+opacity: 0;
 }
