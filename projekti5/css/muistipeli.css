@@ -52,13 +52,32 @@ section {
 
 
 .peli {
+  transform-style: preserve-3d;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   width: 22%;
   display: inline-block;
   background-color: black;
-  border: 2px solid red;;
+  border: 2px solid red;
 }
 
 .kortti {
 width: 100%;
-opacity: 0;
+/*opacity: 0;*/
+transform: rotateY(-180deg);
+
+}
+
+.toggle {
+  transform: rotateY(180deg);
+
+}
+
+.tausta{
+
+  backface-visibility: hidden;
+}
+
+#aika{
+  position: fixed;
+
 }

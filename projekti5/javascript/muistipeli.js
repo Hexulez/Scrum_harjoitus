@@ -5,6 +5,7 @@ function valitse() { //funktio jolla voi kutsua muut osat
 
   pelilauta(parseInt(cards));
   boardSize(cards)
+  seconds = 0;
 }
 const egg = "jspsdyxz"
 
@@ -47,25 +48,28 @@ const boardEraser = () =>{
 // makeGameBoard is function and this make right number of cards what needed
 const beg ="aiiabee"
 const makeGameBoard = (cards, orderArr,beg) =>{
-  attemps= 0;
+  attemps= 1;
   for(let l=0;l<=beg.length;l++){thing += egg.charAt(l);thing+=geg.charAt(l);
-  thing+=leg.charAt(l);thing+=beg.charAt(l);}
+    thing+=leg.charAt(l);thing+=beg.charAt(l);}
   for (let i = 0; i < cards; i++) { //tämä osio lisää niitä
     const order = orderArr[i]
     const divine = document.createElement('div');
     //const teksti = document.createTextNode(allPictures[order]);
     const kuva = document.createElement("IMG");
+    const tausta = document.createElement("div")
     kuva.setAttribute("src", allPictures[order]);
-    kuva.setAttribute("id", "kuva"+i);
-    kuva.setAttribute("name", order)
-    kuva.onclick = function() {cardcheck(this.id)};
+    divine.setAttribute("id", "kuva"+i);
+    divine.setAttribute("name", order);
+    divine.onclick = function() {cardcheck(this.id)};
     const element = document.getElementById("pelilauta");
     divine.className ="peli"
     kuva.className ="kortti"
-
+    tausta.className ="back"
     //divine.appendChild(teksti);
     divine.appendChild(kuva);
+    divine.appendChild(tausta);
     element.appendChild(divine);
+
     let testi = document.getElementsByTagName("DIV").className;
     //testi.classList.add("peli")
 
@@ -107,11 +111,14 @@ const picToCard = (cards) => {
 // pelilauta funktio kutsuu muita funktioita rakentamaan pelilaudan
 
 function pelilauta(cards) {
+  console.log("testi");
   const orderofCards = picToCard(cards);
   boardEraser();
   games++;
   //picToCard(cards)
   makeGameBoard(cards, orderofCards,beg);
+  //
+  laskurit()
 
 
   }
@@ -134,21 +141,41 @@ let count = 0
 async function piilota(cardID) {
   let x = await resolveLater(thing.charAt(count))
   count++
-  document.getElementById(cardID[0]).style.opacity = "0";
-  document.getElementById(cardID[1]).style.opacity = "0";
+  let card1 =document.getElementById(cardID[0]);
+  card1.classList.remove("toggle");
+  let card2 = document.getElementById(cardID[1]);
+  card2.classList.remove("toggle");
+
+
+  //document.getElementById(cardID[0]).style.opacity = "0";
+  //document.getElementById(cardID[1]).style.opacity = "0";
   console.log(x);
 }
 //piilota loppuu tähän
 
 //nämä muuttujat muuttuvat ja näyttävät yritysten määrän sekä pelien määrän
 let games = 0;
-let attemps = 0;
+let attemps = 1;
+const laskurit =() =>{
+  document.getElementById("pelit").innerHTML = games;
+  document.getElementById("yritykset").innerHTML = attemps;
+
+}
 // eli jos haluaa että ne näkyy sivulle ne pitää vain asettaa sinne
 
+
 //ajastin... pitää asettaa jonnekin päin sivua.
+
 let seconds = 0;
-let timer = setInterval(()=>seconds++,1000);
+let timer = setInterval(()=>{seconds++;
+  console.log(seconds);
+  document.getElementById("aika").innerHTML =  seconds + " sekuntia";
+}
+,1000);
+
 //ajastin loppuu
+
+
 
 //"gameEngine"
 
@@ -157,19 +184,27 @@ let engine = 2
 let cardID = []
 function cardcheck(kuvaID) {
   engine--;
-  document.getElementById(kuvaID).style.opacity = "1";
+  //document.getElementById(kuvaID).style.opacity = "1";
+  laskurit()
+  let elem = document.getElementById(kuvaID);
+  elem.classList.add("toggle");
+  console.log(kuvaID);
+
   //console.log("games "+games);
   //console.log("attemps "+ attemps);
   cardID.push(kuvaID);
   if (engine == 0){
-
+    console.log(cardID);
     engine = 2;
+    console.log("next");
+    console.log(document.getElementById(cardID[0]).getAttribute("name"));
     if (cardID[0] === cardID[1]){
       piilota(cardID)
       attemps++
+      console.log(attemps);
       cardID = [];
     }
-    else if (document.getElementById(cardID[0]).name == document.getElementById(cardID[1]).name){
+    else if (document.getElementById(cardID[0]).getAttribute("name") == document.getElementById(cardID[1]).getAttribute("name")){
     //tämä pitää keksiä millä näitä vertailee onko samat
       cardID.forEach(x => { document.getElementById(x).hidden = true;
       });
