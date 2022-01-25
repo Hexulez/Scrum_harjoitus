@@ -86,7 +86,7 @@ const checkCards = (e) => {
     console.log(flippedCards);
     //Logic
     if (flippedCards.length === 2) {
-        if (flippedCards[0]. getAttribute("name") === flippedCards[1].getAttribute("name")) {
+        if (flippedCards[0]. getAttribute("name") === flippedCards[1].getAttribute("name")){
             console.log("match");
             flippedCards.forEach(card => {
                 card.classList.remove("flipped");
@@ -130,54 +130,58 @@ const restart = (text) => {
     });
     playerLives = 16;
     playerLivesCount.textContent = playerLives;
-    setTimeout(() => {
-      window.alert(text+ " Time used " + seconds + " seconds"), 100; seconds = 0
-    });
+    setTimeout(() => {window.alert(text+ " Time used " + seconds + " seconds"), 100;
+      seconds=0});
+
 };
 
 cardGenerator();
 
-//Timer
+
+//timer
 let seconds = 0;
-let timer = setInterval(() => {
-  seconds ++;
+let timer = setInterval(()=>{seconds++;
   console.log(seconds);
-  document.getElementById("time").innerHTML = seconds + " seconds";
-}), 1000);
-
-//This add listening to dropbox
-document.getElementById("valitseKoko").addEventListener("change", (value) => valitseKoko(value));
-
-//Remove old cards
-const boardEraser = () => {
-  let div = document.querySelector('.card');
-  if (div != null) {
-    document.querySelectorAll('.card').forEach(e => e.remove());
-  }
+  document.getElementById("time").innerHTML =  seconds + " seconds";
 }
+,1000);
 
-//Size change
+//add more code after this
+
+//this add listening to dropbox
+document.getElementById("valitseKoko").addEventListener("change",(value)=>
+valitseKoko(value))
+
+//remove old cards
+const boardEraser = () =>{
+  let div = document.querySelector('.card');
+  if (div != null ) {
+    document.querySelectorAll('.card').forEach(e => e.remove());
+  }}
+
+
+//size change
 const valitseKoko = (value) => {
   boardEraser()
   let elem = document.getElementsByClassName("board")
   let size = document.getElementById("valitseKoko").value;
-    if (size == 16) {
+    if (size == 16){
       elem[0].style.gridTemplateColumns = "repeat(4, 8rem)"
       elem[0].style.gridTemplateRows = "repeat(4, 8rem)"
-      cardNumb = 16
+      cardNumb= 16
       numberOfCards = fill(8)
     }
-    else if (size == 24) {
+    else if (size == 24){
       elem[0].style.gridTemplateColumns = "repeat(4, 8rem)"
       elem[0].style.gridTemplateRows = "repeat(6, 8rem)"
-      cardNumb = 24
+      cardNumb= 24
       numberOfCards = fill(12)
     }
-    else if (size == 36) {
+    else if (size == 36){
       elem[0].style.gridTemplateColumns = "repeat(6, 8rem)"
       elem[0].style.gridTemplateRows = "repeat(6, 8rem)"
-      cardNumb = 36
+      cardNumb= 36
       numberOfCards = fill(18)
     }
-  cardGenerator();
+  cardGenerator()
 }
