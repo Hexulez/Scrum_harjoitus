@@ -17,9 +17,9 @@ body {
 
 .board {
   display: grid;
-  grid-template-columns: repeat(6, 8rem);
-  grid-template-rows: repeat(6, 8rem);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(6, 7rem);
+  grid-template-rows: repeat(6, 7rem);
+  grid-gap: 1rem;
   perspective: 800px;
 }
 
