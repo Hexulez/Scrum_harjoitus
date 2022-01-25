@@ -1,7 +1,7 @@
 //Grab a couple of things
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
-let playerLives = 6;
+let playerLives = 10;
 
 //Link text
 playerLivesCount.textContent = playerLives;
@@ -108,7 +108,7 @@ const checkCards = (e) => {
         }
     }
     //Run a check to see if we won the game
-    if (toggleCard.length === 16) {
+    if (toggleCard.length === 36) {
         restart("You won");
     }
 };
@@ -129,7 +129,7 @@ const restart = (text) => {
             section.style.pointerEvents = "all";
         }, 1000);
     });
-    playerLives = 6;
+    playerLives = 10;
     playerLivesCount.textContent = playerLives;
     setTimeout(() => window.alert(text), 100);
 };
