@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" href="css/muistipeli.css">
-    <script src="javascript/muistipeli.js" charset="utf-8"></script>
-    <title>Muisti | Etusivu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Game</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <body>
+    <h1>Lives: <span class="playerLivesCount"></span> Time: <span id="time"><span></h1>
+    <section class="board"></section>
+    <div class="">
 
-    <body>
+    <select class="muistipeli" id="valitseKoko" >
+      <option value="selected disabled hidden">Valitse pelin koko</option>
+      <option value="16">4x4</option>
+      <option value="24">4x6</option>
+      <option value="36">6x6</option>
 
-      <header><h1>Tervetuloa harjoittamaan muistiasi!</h1></header>
-
-      <section>
-        <p>Muisti, etenkin työmuisti on jokaisella koetuksella.<br>
-        Päivittäisillä muistiharjoituksilla pidät muististasi huolta.<br>
-        Olemme luoneet muistipelin, jossa on kolmea eri kokoa: 4x4, 4x6 ja 6x6.<br>
-        Pelissä lasketaan ajan lisäksi korttien avaukset.</p>
-      </section>
-
-      <nav>
-        <button type="button" name="button"><a href="temp.html">Muistipeli</a></button>
-      </nav>
-
-      </body>
-    </html>
+    </select>
+  </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
