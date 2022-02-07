@@ -34,8 +34,8 @@ const fill = (card) => {
   let numberOfCards = []; //depending on the board size, gonna push cards
   for (let y = 0; y < 2; y ++) { //Pushin the cards as match to the board (ie. 2x metallica card)
     for (let i = 0; i < card; i ++) {
-      numberOfCards.push(imgBank[i]); // 
-         card source is imgBank
+      numberOfCards.push(imgBank[i]); // card source is imgBank
+
     }
   }
   return numberOfCards;
@@ -121,7 +121,7 @@ const restart = (text) => { //here the restart for the game
     cardData.forEach((item, index) => {
         cards[index].classList.remove("toggleCard"); //remove all the toggled cards so the board can randomize and mix cards places again
         //Randomize
-        setTimeout(() => { 
+        setTimeout(() => {
             cards[index].style.pointerEvents = "all";
             faces[index].src = item.imgSrc;
             cards[index].setAttribute("name", item.name);
@@ -147,7 +147,7 @@ let timer = setInterval(() => { seconds ++; //with starting of the game time sta
 ,1000);
 
 //this add listening to dropbox
-document.getElementById("valitseKoko").addEventListener("change",(value) => 
+document.getElementById("valitseKoko").addEventListener("change",(value) =>
 valitseKoko(value)); //here making html dropbox functional
 
 //remove old cards
@@ -159,6 +159,7 @@ const boardEraser = () => {
 
 //size change
 const valitseKoko = (value) => {
+  console.log(value);
   boardEraser();
   let elem = document.getElementsByClassName("board"); //elem (element) variable will act in the behalf of the game's content area so called board
   let size = document.getElementById("valitseKoko").value; //depending on the option of option element in html

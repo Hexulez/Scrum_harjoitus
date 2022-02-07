@@ -1,4 +1,6 @@
+let ticks = 0
 const fuckIt = () => {
+  ticks++
 reset()
 }
 ;
@@ -11,6 +13,9 @@ const snakeBorder = "dark blue";
 const speed = 1000;
 const appleColor = "red";
 let score = 0;
+let highScore = 0;
+const scoreTable =document.querySelector("span");
+scoreTable.textContent = score
 
 
 let snake = [  {x: 200, y: 200},  {x: 190, y: 200},  {x: 180, y: 200},  {x: 170, y: 200},  {x: 160, y: 200}];
@@ -122,6 +127,10 @@ document.addEventListener("touchmove", e=>{
 //game reset
 const reset = () => {
   snake = [  {x: 200, y: 200},  {x: 190, y: 200},  {x: 180, y: 200},  {x: 170, y: 200},  {x: 160, y: 200}];
+  if (ticks == 10){
+    alert("oh yeah... harder")
+    ticks++
+  }
 
 }
 
@@ -131,9 +140,14 @@ const gameOver = () =>{
   for(let i = 1; i<snake.length;i++){
     if (snake[0].x == snake[i].x && snake[0].y == snake[i].y){ //jos käärmeen pää ja kroppa on samassa paikkaa lopettaa pelin
       reset()
+      highScore = score;
+      score = 0 ;
     }
+    //else if reunoja varten
     else if (snake[0].x == -10 || snake[0].x == 400 || snake[0].y == -10 || snake[0].y == 400){
       reset()
+      highScore = score;
+      score = 0;
     }
   }
 }
@@ -143,16 +157,18 @@ let getApple = false;
 const randomFood= ()=>
 Math.floor(Math.random()*39)*10+10;
 
-
-let fruit = {x:200, y:200}
+let changeScore = 1
+let fruit = {x:100, y:200}
 //apple
-const apple = () => {
+const apple = () => { //tekee omppuja
   snakeboard_ctx.fillStyle = appleColor;  //nää ei esittelyä kaipaa samat kun käärmeessäkin
   snakeboard_ctx.strokeStyle = appleColor;
   snakeboard_ctx.fillRect(fruit.x, fruit.y, 10, 10);
   snakeboard_ctx.strokeRect(fruit.x, fruit.y,10 ,10);
   if (snake[0].x == fruit.x && snake[0].y == fruit.y){ //jos käärmeen pää osuu hedelmään niin saa pisteet ja tulee uusi.
-    score += 10;
+    score += changeScore;
+    console.log(score);
+    scoreTable.textContent = score
     getApple = true;
     fruit.y =randomFood()
     fruit.x = randomFood()
@@ -161,7 +177,16 @@ const apple = () => {
 }
 
 
-
+let howFast =100;
+let speedID = document.getElementById("speed");
+//difficulty
+const difficulty = () =>{//ternary operaattorilla tarkistaa minkä vaikeuden laittaa
+  let speedo = document.getElementById("speed").value;
+  speedo == "80"?(howFast = 80, changeScore = 1):speedo == "50"?(howFast=50, changeScore = 5):speedo == "30"?(howFast=30, changeScore = 10): console.log("speedo");
+console.log(speedo);
+}
+document.getElementById("speed").addEventListener("change",() => difficulty()) // kuuntelee dropboxia ja kutsuu funnktion millä vaihtaa vaikeutta
+//difficulty(speedo));
 
 
 //main thing rule all the things :)
@@ -174,5 +199,5 @@ const main = () =>{
     drawSnake()
     moving()
     main()
-  },50)
+  },howFast)
 }

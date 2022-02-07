@@ -1,0 +1,13 @@
+.gameCanvas{
+  position:
+}
+
+body {
+  background: rgb(56,74,209);
+background: linear-gradient(90deg, rgba(56,74,209,0.7000910194174756) 18%, rgba(240,133,204,1) 47%, rgba(3,255,241,0.37970266990291257) 100%);
+}
+
+.container{
+  background: rgb(113,224,218);
+background: linear-gradient(90deg, rgba(113,224,218,0.37970266990291257) 7%, rgba(241,188,223,0.40235639158576053) 56%, rgba(56,74,209,0.509152508090615) 91%);
+}
