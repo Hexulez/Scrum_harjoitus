@@ -51,6 +51,12 @@ const moving = () =>{
 }
 
 
+//borders
+const drawBorders =() => {
+  snakeboard_ctx.strokeStyle  = "black" //reunaväri
+  snakeboard_ctx.strokeRect(0, 0, 400, 400); //määrittelee reunojen alueen
+}
+
 //detecting arrow key presses and change direction... :D
 document.addEventListener('keydown', (e) => {
 
@@ -82,7 +88,7 @@ document.addEventListener('keydown', (e) => {
 //mobile touch
 //tämä oli oma ensimmäinen mobiiliohjaus minkä heitin hatusta.
 //Mulla ei ole mitään käsitystä kuinka se oikeasti pitäisi tehdä :D
-//tälläinen purkkapatentti 
+//tälläinen purkkapatentti
 document.addEventListener("touchstart", e=>{ //kosketus sijoittaa aloitus arvot muutujaan
   touch.x = event.touches[0].clientX;
   touch.y = event.touches[0].clientY });
@@ -126,6 +132,9 @@ const gameOver = () =>{
     if (snake[0].x == snake[i].x && snake[0].y == snake[i].y){ //jos käärmeen pää ja kroppa on samassa paikkaa lopettaa pelin
       reset()
     }
+    else if (snake[0].x == -10 || snake[0].x == 400 || snake[0].y == -10 || snake[0].y == 400){
+      reset()
+    }
   }
 }
 let getApple = false;
@@ -160,6 +169,7 @@ const main = () =>{
   setTimeout(() =>{ //luo pienen viiveen koodin suorittamiseen niin ei peli liiku liian nopeasti.
     gameOver()
     clear()
+    drawBorders()
     apple()
     drawSnake()
     moving()
